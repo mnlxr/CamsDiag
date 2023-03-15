@@ -5,4 +5,9 @@ Cams Displacement Diagrams using <a href="https://echarts.apache.org/en/index.ht
 Requirements : Java JRE
 
 1. Open 
+
 ![alt text](https://github.com/mnlxr/CamsDiag/blob/main/images/camsdiag%20(1).png?raw=true)
+
+2. Fill the required information 
+
+![alt text](https://github.com/mnlxr/CamsDiag/blob/main/images/camsdiag%20(1).jpg?raw=true)
