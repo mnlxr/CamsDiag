@@ -18,6 +18,7 @@ Download and Infos : https://repos.mmanolas.com/CamsDiag/
  + Export report using <a href="https://github.com/parallax/jsPDF">jsPDF</a>   
 
 <hr>
+
 Setup : 
 
 ![alt text](https://github.com/mnlxr/CamsDiag/blob/main/images/CamsDiag_setup01.gif?raw=true)
