@@ -19,5 +19,5 @@ Requirements : <a href="https://www.java.com/en/download/manual.jsp">Java JRE</a
 
 3. View the charts in your default browser
 
-![alt text](https://github.com/mnlxr/CamsDiag/blob/main/images/camsdiag%20(1).jpeg?raw=true)
+![alt text](https://github.com/mnlxr/CamsDiag/blob/main/images/camsdiag03.jpeg?raw=true)
 
