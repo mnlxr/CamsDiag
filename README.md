@@ -11,11 +11,11 @@ Requirements : <a href="https://www.java.com/en/download/manual.jsp">Java JRE</a
 
 1. Open & Fill the required information 
 
-![alt text](https://github.com/mnlxr/CamsDiag/blob/main/images/camsdiag%20(1).png?raw=true)
+![alt text](https://github.com/mnlxr/CamsDiag/blob/main/images/camsdiag01.png?raw=true)
 
 2. Edit the random Values
 
-![alt text](https://github.com/mnlxr/CamsDiag/blob/main/images/camsdiag%20(2).png?raw=true)
+![alt text](https://github.com/mnlxr/CamsDiag/blob/main/images/camsdiag02.png?raw=true)
 
 3. View the charts in your default browser
 
