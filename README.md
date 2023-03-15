@@ -8,6 +8,11 @@
 Requirements : <a href="https://www.java.com/en/download/manual.jsp">Java JRE</a>
 
 <hr>
+- Embeded WebServer <a href="https://www.nginx.com/">nginx</a>
+- <a href="https://echarts.apache.org/en/index.html">Apache Echarts</a> Library
+- Export report using <a href="https://github.com/parallax/jsPDF">jsPDF</a> 
+
+<hr>
 
 1. Open & Fill the required information 
 
