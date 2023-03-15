@@ -8,9 +8,12 @@
 Requirements : <a href="https://www.java.com/en/download/manual.jsp">Java JRE</a>
 
 <hr>
- - Embeded WebServer <a href="https://www.nginx.com/">nginx</a>  
- - <a href="https://echarts.apache.org/en/index.html">Apache Echarts</a> Library   
- - Export report using <a href="https://github.com/parallax/jsPDF">jsPDF</a>   
+
+ + Embeded WebServer <a href="https://www.nginx.com/">nginx</a>   
+ 
+ + <a href="https://echarts.apache.org/en/index.html">Apache Echarts</a> Library   
+ 
+ + Export report using <a href="https://github.com/parallax/jsPDF">jsPDF</a>   
 
 <hr>
 
@@ -22,7 +25,7 @@ Requirements : <a href="https://www.java.com/en/download/manual.jsp">Java JRE</a
 
 ![alt text](https://github.com/mnlxr/CamsDiag/blob/main/images/camsdiag02.png?raw=true)
 
-3. View the charts in your default browser
+3. View the charts (Cams Displacement Diagram) in your default browser
 
 ![alt text](https://github.com/mnlxr/CamsDiag/blob/main/images/camsdiag03.jpeg?raw=true)
 
