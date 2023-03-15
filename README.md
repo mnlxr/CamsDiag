@@ -4,7 +4,11 @@ Cams Displacement Diagrams using <a href="https://echarts.apache.org/en/index.ht
 
 Report Charts with <a href="https://github.com/parallax/jsPDF">jsPDF</a>
 
-Requirements : Java JRE
+<hr>
+
+Requirements : <a href="https://www.java.com/en/download/manual.jsp">Java JRE</a>
+
+<hr>
 
 1. Open & Fill the required information 
 
