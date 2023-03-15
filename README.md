@@ -7,6 +7,8 @@
 
 Requirements : <a href="https://www.java.com/en/download/manual.jsp">Java JRE</a>
 
+Download and Infos : https://repos.mmanolas.com/CamsDiag/ 
+
 <hr>
 
  + Embeded WebServer <a href="https://www.nginx.com/">nginx</a>   
