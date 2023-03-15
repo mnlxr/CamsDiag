@@ -10,4 +10,4 @@ Requirements : Java JRE
 
 2. Fill the required information 
 
-![alt text](https://github.com/mnlxr/CamsDiag/blob/main/images/camsdiag%20(1).jpg?raw=true)
+![alt text](https://github.com/mnlxr/CamsDiag/blob/main/images/camsdiag%20(2).png?raw=true)
