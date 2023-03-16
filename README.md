@@ -1,6 +1,21 @@
 # CamsDiag
 <p align="center">
  <img alt="" src="https://github.com/mnlxr/CamsDiag/blob/main/images/logo.png" height="300px">
+<p align="center">
+<a href="https://github.com/mnlxr/CamsDiag/releases">
+    <img alt="Image Size" src="https://img.shields.io/github/v/release/mnlxr/CamsDiag?display_name=tag&style=plastic">
+</a> 
+ <a href="https://github.com/mnlxr/CamsDiag">
+    <img alt="Image Size" src="https://img.shields.io/github/license/mnlxr/CamsDiag?style=plastic">
+</a> 
+ <a href="https://github.com/mnlxr/CamsDiag">
+    <img alt="Image Size" src="https://img.shields.io/github/repo-size/mnlxr/CamsDiag">
+</a>  
+ <a href="https://repos.mmanolas.com/CamsDiag">
+    <img alt="Image Size" src="https://img.shields.io/website?down_color=red&down_message=offline&style=plastic&url=https%3A%2F%2Frepos.mmanolas.com%2FCamsDiag%2F">
+</a>
+ 
+ 
 </p>
 
 
