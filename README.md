@@ -8,7 +8,7 @@
 
 Requirements : <a href="https://www.java.com/en/download/manual.jsp">Java JRE</a>
 
-Download and Infos : https://repos.mmanolas.com/CamsDiag/ OR from Github Releases
+Download and Infos : https://repos.mmanolas.com/CamsDiag/ OR from <ahref="https://github.com/mnlxr/CamsDiag/releases">Github Releases</a>
 
 <hr>
 
