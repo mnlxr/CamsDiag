@@ -25,7 +25,8 @@
 <hr>
 
  - Cams Displacement Diagrams using <a href="https://echarts.apache.org/en/index.html">Apache Echarts</a> and Java<br>
-   Generator of Area Charts 
+    - Generator of Area Charts 
+    - pdf report to synchronize a Machine
  - Report Charts with <a href="https://github.com/parallax/jsPDF">jsPDF</a>
 
 <hr>
