@@ -1,6 +1,7 @@
 # CamsDiag
 
- - Cams Displacement Diagrams using <a href="https://echarts.apache.org/en/index.html">Apache Echarts</a> and Java
+ - Cams Displacement Diagrams using <a href="https://echarts.apache.org/en/index.html">Apache Echarts</a> and Java<br>
+   Generator of Area Charts 
  - Report Charts with <a href="https://github.com/parallax/jsPDF">jsPDF</a>
 
 <hr>
@@ -16,6 +17,12 @@ Download and Infos : https://repos.mmanolas.com/CamsDiag/
  + <a href="https://echarts.apache.org/en/index.html">Apache Echarts</a> Library   
  
  + Export report using <a href="https://github.com/parallax/jsPDF">jsPDF</a>   
+
+<hr>
+
+Setup : 
+
+![alt text](https://github.com/mnlxr/CamsDiag/blob/main/images/CamsDiag_setup01.gif?raw=true)
 
 <hr>
 
