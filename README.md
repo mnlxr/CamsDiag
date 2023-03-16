@@ -33,9 +33,16 @@ How to use it:
 
 1. Open & Fill the required information 
 
+ * Job Name
+
+ * Number of Cams (Charts)
+
+ * Job Description
+
+
 ![alt text](https://github.com/mnlxr/CamsDiag/blob/main/images/camsdiag01.png?raw=true)
 
-2. Edit the random Values
+2. Edit the random Values and modify according to your needs
 
 ![alt text](https://github.com/mnlxr/CamsDiag/blob/main/images/camsdiag02.png?raw=true)
 
