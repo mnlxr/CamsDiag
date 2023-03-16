@@ -27,7 +27,7 @@
  - Cams Displacement Diagrams using <a href="https://echarts.apache.org/en/index.html">Apache Echarts</a> and Java<br>
     - Generator of Area Charts 
     - Generate from 1 to 60 Charts automatic with random values
-    - pdf report to synchronize all of Charts
+    - pdf report of all Charts
  - Report Charts with <a href="https://github.com/parallax/jsPDF">jsPDF</a>
 
 <hr>
