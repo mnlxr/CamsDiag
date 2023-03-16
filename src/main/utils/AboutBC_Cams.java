@@ -74,7 +74,7 @@ public class AboutBC_Cams extends javax.swing.JDialog implements ActionListener,
         jLabel1.setForeground(new java.awt.Color(51, 51, 51));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/main/images/camsdiag01.png"))); // NOI18N
-        jLabel1.setToolTipText("BIC Violex S.A. - CopyRight 2021 - Developer : Manolis Manolas");
+        jLabel1.setToolTipText("CopyRight 2021 - Developer : Manolis Manolas");
         jLabel1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel1.addMouseListener(this);
 

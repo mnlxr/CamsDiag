@@ -252,7 +252,7 @@ public class CreateFiles {
                 + "<hr>\n"
                 + "<p>© All rights reserved by Bic Group S.A., including cases of proprietary applications. \n"
                 + "        We retain sole power of disposal including all righty relating to copying and distribution.</p>\n"
-                + "<p>BIC Violex S.A. - Developer : <a href=\"mailto:"+emaildev+"\">M.Manolas</a> - 2021 </p>\n"
+                + "<p>Developer : <a href=\"mailto:"+emaildev+"\">M.Manolas</a> - 2021 </p>\n"
                 + "</footer>\n"
                 + "    </body>\n"
                 + "<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js\"></script>\n"

@@ -108,7 +108,7 @@
           <Image iconType="3" name="/main/images/camsdiag01.png"/>
         </Property>
         <Property name="toolTipText" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-          <Connection code="&quot;BIC Violex S.A. - CopyRight 2021 - Developer : Manolis Manolas&quot;" type="code"/>
+          <Connection code="&quot;CopyRight 2021 - Developer : Manolis Manolas&quot;" type="code"/>
         </Property>
         <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
           <Color id="Hand Cursor"/>

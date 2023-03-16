@@ -1825,7 +1825,7 @@ chart_img = chart.getDataURL()
                 + "	creator: \"Developer; Manolis Manolas\"\n"
 //                + "///////////////////////////////////////////\n"
 //                + "//Dept: \"M&IT-GR\",\n"
-//                + "//Company: \"BIC Violex S.A.\",\n"
+
 //                + "//CopyRight: \"All rights reserved by BicViolex S.A., including cases of proprietary applications. We retain sole power of disposal including all righty relating to copying and distribution. \",\n"
 //                + "//Software: \" CamsDiag\",\n"
 
