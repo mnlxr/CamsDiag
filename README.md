@@ -24,6 +24,11 @@ Setup :
 
 ![alt text](https://github.com/mnlxr/CamsDiag/blob/main/images/CamsDiag_setup01.gif?raw=true)
 
+How to use it: 
+
+![alt text](https://github.com/mnlxr/CamsDiag/blob/main/images/CamsDiagUse01.gif?raw=true)
+
+
 <hr>
 
 1. Open & Fill the required information 
