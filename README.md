@@ -1,6 +1,6 @@
 # CamsDiag
 <p align="center">
-![alt text](https://github.com/mnlxr/CamsDiag/blob/main/images/logo.png?raw=true)
+ <img alt="" src="[frontend/public/logo.png](https://github.com/mnlxr/CamsDiag/blob/main/images/logo.png)" height="300px">
 </p>
 
 
