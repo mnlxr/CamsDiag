@@ -11,7 +11,10 @@
  <a href="https://github.com/mnlxr/CamsDiag">
     <img alt="Image Size" src="https://img.shields.io/github/repo-size/mnlxr/CamsDiag">
 </a>  
- <a href="https://repos.mmanolas.com/CamsDiag">
+ <a href="https://github.com/mnlxr/CamsDiag">
+    <img alt="Image Size" src="https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2Fmnlxr%2FCamsDiag">
+</a> 
+<a href="https://repos.mmanolas.com/CamsDiag">
     <img alt="Image Size" src="https://img.shields.io/website?down_color=red&down_message=offline&style=plastic&url=https%3A%2F%2Frepos.mmanolas.com%2FCamsDiag%2F">
 </a>
  
