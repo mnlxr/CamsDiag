@@ -26,7 +26,7 @@ Setup :
 
 How to use it: 
 
-![alt text](https://github.com/mnlxr/CamsDiag/blob/main/images/CamsDiagUse01.gif?raw=true)
+![alt text](https://github.com/mnlxr/CamsDiag/blob/main/images/CamsDiagUse02.gif?raw=true)
 
 
 <hr>
