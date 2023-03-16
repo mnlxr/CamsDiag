@@ -15,6 +15,7 @@ import java.io.Writer;
 import java.nio.charset.StandardCharsets;
 import static main.CamReqs.MainInfo.CamJobName;
 import static main.CamReqs.MainInfo.NumberOfCams;
+import static main.common.MainVars.emaildev;
 
 /**
  *
@@ -197,9 +198,9 @@ public class CreateFiles {
                 + "pdf.setProperties({\n"
                 + "    title: '" + CamJobName() + "CamsDiag',\n"
                 + "    subject: '" + CamJobName() + "',\n"
-                + "    author: 'Manolis Manolas | manolis.manolas@bicworld.com',\n"
+                + "    author: 'Manolis Manolas | "+emaildev+"',\n"
                 + "    keywords: 'cams, diagamms, charts',\n"
-                + "    creator: 'CamsDiag - BIC Violex S.A.'\n"
+                + "    creator: 'CamsDiag'\n"
                 + "});"
                 + "pdf.cellInitialize();"
                 + "            // source can be HTML-formatted string, or a reference\n"
@@ -251,7 +252,7 @@ public class CreateFiles {
                 + "<hr>\n"
                 + "<p>© All rights reserved by Bic Group S.A., including cases of proprietary applications. \n"
                 + "        We retain sole power of disposal including all righty relating to copying and distribution.</p>\n"
-                + "<p>BIC Violex S.A. - Developer : <a href=\"mailto:manolis.manolas@bicworld.com\">M.Manolas</a> - 2021 </p>\n"
+                + "<p>BIC Violex S.A. - Developer : <a href=\"mailto:"+emaildev+"\">M.Manolas</a> - 2021 </p>\n"
                 + "</footer>\n"
                 + "    </body>\n"
                 + "<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js\"></script>\n"

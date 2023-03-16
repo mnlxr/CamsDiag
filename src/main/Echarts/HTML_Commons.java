@@ -7,6 +7,7 @@ package main.Echarts;
 import java.io.IOException;
 import static main.CamReqs.MainInfo.CamJobName;
 import static main.CamReqs.MainInfo.WebServerPath;
+import static main.common.MainVars.emaildev;
 import main.info.UserInfo;
 
 /**
@@ -60,7 +61,7 @@ public class HTML_Commons {
                 + "<hr>\n"
                 + "<p>© All rights reserved by Bic Group S.A., including cases of proprietary applications. \n"
                 + "        We retain sole power of disposal including all righty relating to copying and distribution.</p>\n"
-                + "<p>Developer : <a href=\"mailto:manolis.manolas@bicworld.com\">M.Manolas</a> - 2022 </p>\n"
+                + "<p>Developer : <a href=\"mailto:"+emaildev+"\">M.Manolas</a> - 2022 </p>\n"
                 + "</footer>\n";
         return h1;
     }    

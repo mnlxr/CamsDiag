@@ -1713,12 +1713,6 @@ String tablehtml = "/*\n"
                 + "	author: \"" + UserInfo.Get_UserName().toLowerCase() + "\",\n"
                 + "	keywords: \"CamsDiag, Cams, Charts, " + CamJobName() + "\",\n"
                 + "	creator: \"Developer; Manolis Manolas\",\n"
-                + "///////////////////////////////////////////\n"
-                + "//Dept: \"M&IT-GR\",\n"
-                + "//Company: \"BIC Violex S.A.\",\n"
-                + "//CopyRight: \"All rights reserved by BicViolex S.A., including cases of proprietary applications. We retain sole power of disposal including all righty relating to copying and distribution. \",\n"
-                + "//Software: \" CamsDiag\",\n"
-                + "//Email: \"manolis.manolas@bicworld.com\",\n"
                 + "\n"
                 + "});";
         
@@ -1834,7 +1828,7 @@ chart_img = chart.getDataURL()
 //                + "//Company: \"BIC Violex S.A.\",\n"
 //                + "//CopyRight: \"All rights reserved by BicViolex S.A., including cases of proprietary applications. We retain sole power of disposal including all righty relating to copying and distribution. \",\n"
 //                + "//Software: \" CamsDiag\",\n"
-//                + "//Email: \"manolis.manolas@bicworld.com\",\n"
+
 //                + "\n"
                 + "});\n";
         h1 = "\n\n$('#printDataTable').click(function() {\n"

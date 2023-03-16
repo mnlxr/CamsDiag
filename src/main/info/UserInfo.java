@@ -17,6 +17,7 @@ import java.util.GregorianCalendar;
 import java.util.Locale;
 import java.util.Map;
 import java.util.TimeZone;
+import static main.common.MainVars.emaildev;
 
 /**
  *
@@ -33,7 +34,7 @@ public class UserInfo {
                 //+ OneLine_Comment()
                 + "//Date : " + Set_TimeCountry() + "\n"
                 + "//Name : Manolis Manolas\n"
-                + "//Email : manolis.manolas@bicworld.com\n"
+                + "//Email : "+emaildev+"\n"
                 + "//App : CAMs Diagr.\n"
                 + "//Echarts :: Powered By Apache\n"
                 + "#"+OneLine_Comment()                
@@ -57,7 +58,7 @@ public class UserInfo {
                 +"#"+OneLine_Comment()
                 + "#Date : " + Set_TimeCountry() + "\n"
                 + "#Name : Manolis Manolas\n"
-                + "#Email : manolis.manolas@bicworld.com\n"
+                + "#Email : "+emaildev+"\n"
                 + "#App : CAMs Diagr.\n"
                 + "#Echarts :: Powered By Apache\n"
                 +"#"+OneLine_Comment()                

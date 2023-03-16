@@ -50,7 +50,9 @@ public class MainVars {
     
     public static String propfile="camsdiag.properties";
     public static String echartspropfile="echarts.properties";
-     
+    
+    public static String emaildev = "manolis.manwlas@hotmail.com";
+    
     public static String dbname="CamsDiag"; 
     public static String dbnameFull="CamsDiag.db";
     public static String dbjsfile = "dbcams_"+UserInfo.Get_UserName().toLowerCase()+".js";
@@ -72,11 +74,11 @@ public class MainVars {
     public static String prod_server = "http://server01";
     public static String servername = "aniscamsdiag01";
     public static String aniscamsdiag01 = "https://"+servername;
-    public static String aniscamsdiag01url = "https://"+servername+".eu.bicworld.com:8123/";
-    //public static String aniscamsdiag01UNC = "\\\\"+servername+".eu.bicworld.com\\C$";
+    public static String aniscamsdiag01url = "https://"+servername+":8123/";
+    
     //public static String aniscamsdiag01ApachePath = aniscamsdiag01UNC + "\\Apache24\\htdocs";
     public static String aniscamsdiag01_Upload = "\\\\aniscamsdiag01\\charts$";
-    public static String anicamsdiag01IP = "172.17.32.68";
+    
     
     public static String username = UserInfo.Get_UserName().toLowerCase();
     public static String dirLocation = main_path_installation + "\\" + userDataBackUp + "\\" + username + "\\";    

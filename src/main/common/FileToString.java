@@ -42,7 +42,7 @@ public class FileToString {
         }
         reader.close();
         String str = buffer.toString();
-        //D:\Data\PTC\mmanolas_WorkspacesR\wf_csh\.cache2008\pds.bicworld.com443\events
+       
         return str;
     }
   

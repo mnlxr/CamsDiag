@@ -11,6 +11,7 @@ import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
 import main.common.FileToString;
+import static main.common.MainVars.emaildev;
 
 
 /**
@@ -220,7 +221,7 @@ public class AboutBC_Cams extends javax.swing.JDialog implements ActionListener,
           if (Desktop.isDesktopSupported()) {
                 Desktop desktop = Desktop.getDesktop();
                 try {
-                    URI uri = new URI("http://gr.bicworld.com/gr/");
+                    URI uri = new URI("https://repos.mmanolas.com");
                     desktop.browse(uri);
                 } catch (IOException ex) {
                     ex.printStackTrace();
@@ -236,7 +237,7 @@ public class AboutBC_Cams extends javax.swing.JDialog implements ActionListener,
           if (Desktop.isDesktopSupported()) {
                 Desktop desktop = Desktop.getDesktop();
                 try {
-                    URI uri = new URI("mailto:manolis.manolas@bicworld.com");
+                    URI uri = new URI("mailto:"+emaildev+"");
                     desktop.browse(uri);
                 } catch (IOException ex) {
                     ex.printStackTrace();
