@@ -34,7 +34,7 @@
 
 Requirements : <a href="https://www.java.com/en/download/manual.jsp">Java JRE</a>
 
-Download and Infos : https://repos.mmanolas.com/CamsDiag/ OR from <a href="https://github.com/mnlxr/CamsDiag/releases">Github Releases</a>
+Download and Infos : https://urlshrt.mmanolas.com/cams OR from <a href="https://github.com/mnlxr/CamsDiag/releases">Github Releases</a>
 
 <hr>
 
