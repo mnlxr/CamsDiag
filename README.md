@@ -1,6 +1,6 @@
 # CamsDiag
 <p align="center">
- <img alt="" src="https://github.com/mnlxr/CamsDiag/blob/main/images/logo.png" height="300px">
+ <img alt="" src="https://github.com/mnlxr/CamsDiag/blob/main/images/logo01.png" height="300px">
 <p align="center">
 <a href="https://github.com/mnlxr/CamsDiag/releases">
     <img alt="Image Size" src="https://img.shields.io/github/v/release/mnlxr/CamsDiag?display_name=tag&style=plastic">
