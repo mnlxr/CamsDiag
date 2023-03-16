@@ -1,6 +1,8 @@
 # CamsDiag
-
+<p align="center">
 ![alt text](https://github.com/mnlxr/CamsDiag/blob/main/images/logo.png?raw=true)
+</p>
+
 
 <hr>
 
