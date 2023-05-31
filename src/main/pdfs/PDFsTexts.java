@@ -47,10 +47,11 @@ public class PDFsTexts extends javax.swing.JFrame implements DropTargetListener{
     }
 DropTarget dt;
 
-
-
-
-public String[] TextAreaFiles_StringArray() {
+    /**
+     *
+     * @return
+     */
+    public String[] TextAreaFiles_StringArray() {
 String[] h1 = null;
 String h2 = ta.getText().toString();
 
@@ -62,7 +63,11 @@ String s[] = ta.getText().split("\\r?\\n");
 
 return stringArray;}
 
-public  String TextAreaFiles_String() {
+    /**
+     *
+     * @return
+     */
+    public  String TextAreaFiles_String() {
 String h1="";
 String[] stringArray = TextAreaFiles_StringArray();
 
@@ -80,8 +85,10 @@ StringBuffer sb = new StringBuffer();
 //      System.out.println(str);
 return str;}
 
-
-public void PDFliteCommand() {
+    /**
+     *
+     */
+    public void PDFliteCommand() {
 //String h1="";
 //String pathExport = main_path_installation+"\\PDFs";
 //String cmdpdflite = "\""+pdfliteImage+"\""+" -o \""+pathExport+"\\"+UserInfo.Get_UserName()+"_CamsDiag"+"_"+ZipDate()+".pdf\" -p 1 "+TextAreaFiles_String();
@@ -117,26 +124,46 @@ try {
 
 }
 
+    /**
+     *
+     * @param dtde
+     */
     @Override
   public void dragEnter(DropTargetDragEvent dtde) {
     System.out.println("Drag Enter");
   }
 
+    /**
+     *
+     * @param dte
+     */
     @Override
   public void dragExit(DropTargetEvent dte) {
     System.out.println("Drag Exit");
   }
 
+    /**
+     *
+     * @param dtde
+     */
     @Override
   public void dragOver(DropTargetDragEvent dtde) {
     System.out.println("Drag Over");
   }
 
+    /**
+     *
+     * @param dtde
+     */
     @Override
   public void dropActionChanged(DropTargetDragEvent dtde) {
     System.out.println("Drop Action Changed");
   }
   
+    /**
+     *
+     * @param dtde
+     */
     @Override
     public void drop(DropTargetDropEvent dtde) {
     try {

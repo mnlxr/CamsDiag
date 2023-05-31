@@ -14,8 +14,18 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Scanner;
 
+/**
+ *
+ * @author MManolas
+ */
 public class FileToString {
-  public static void main(String[] args) throws Exception {
+
+    /**
+     *
+     * @param args
+     * @throws Exception
+     */
+    public static void main(String[] args) throws Exception {
     StringBuffer buffer = new StringBuffer();
     BufferedReader reader = new BufferedReader(
         new FileReader("build.xml"));
@@ -29,6 +39,13 @@ public class FileToString {
     System.out.println(str.toLowerCase());
   }
   
+    /**
+     *
+     * @param filename2read
+     * @return
+     * @throws FileNotFoundException
+     * @throws IOException
+     */
     public static String F2String(String filename2read) throws FileNotFoundException, IOException {
         //String line18 = Files.readAllLines(Paths.get("file.txt")).get(18);
         StringBuffer buffer = new StringBuffer();
@@ -46,14 +63,25 @@ public class FileToString {
         return str;
     }
   
+    /**
+     *
+     * @param filename
+     * @return
+     * @throws IOException
+     */
     public static String ReadFileFromSpecificLine(String filename) throws IOException {
         String h1 = "";
         String line18 = Files.readAllLines(Paths.get(filename)).get(18);
         return line18;
     }
     
-    
-      public static String readFileTXT(String pathname) throws IOException {
+    /**
+     *
+     * @param pathname
+     * @return
+     * @throws IOException
+     */
+    public static String readFileTXT(String pathname) throws IOException {
 
         File file = new File(pathname);
         StringBuilder fileContents = new StringBuilder((int) file.length());

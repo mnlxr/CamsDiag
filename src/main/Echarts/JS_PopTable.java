@@ -24,11 +24,21 @@ import static main.common.Folders.mainFolder;
  */
 public class JS_PopTable {
     
-            public static void main(String args[]) throws Exception {
+    /**
+     *
+     * @param args
+     * @throws Exception
+     */
+    public static void main(String args[]) throws Exception {
         JS_PopTable();
     }
     
-    
+    /**
+     *
+     * @throws FileNotFoundException
+     * @throws IOException
+     * @throws Exception
+     */
     public static void JS_PopTable() throws FileNotFoundException, IOException, Exception {
         File statText = new File(PathWebServer+"//"+mainFolder+"//"+CamJobName() + "//" + CamJobName() + "_Table.js");
 
@@ -123,7 +133,11 @@ public class JS_PopTable {
         }
     }  
     
-    
+    /**
+     *
+     * @param t
+     * @return
+     */
     public static String PopTable_Function(Integer t) {
         String h1 = "";
         h1="\nfunction GenerateTable() {\n" +

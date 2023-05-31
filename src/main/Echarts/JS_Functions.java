@@ -26,11 +26,25 @@ import main.info.UserInfo;
  */
 public class JS_Functions {
     
-        public static void main(String args[]) throws Exception {
+    /**
+     *
+     * @param args
+     * @throws Exception
+     */
+    public static void main(String args[]) throws Exception {
         CamsDiag_JS_FunctionsEveryChart();
     }/**/
     
-        public static void CamsDiag_JS_FunctionsEveryChart() throws FileNotFoundException, IOException, Exception {
+    /**
+     *
+     * @throws java.io.FileNotFoundException
+     * @throws FileNotFoundException
+     * @throws java.lang.Exception
+     * @throws java.io.IOException
+     * @throws IOException
+     * @throws Exception
+     */
+    public static void CamsDiag_JS_FunctionsEveryChart() throws FileNotFoundException, IOException, Exception {
             File statText = new File(PathWebServer + "//" + mainFolder + "//"
                     + CamJobName() + "//" + CamJobName() + "_func.js");
             File statTextprod = new File(PathWebServer + "//" + mainFolder + "//"
@@ -126,6 +140,11 @@ public class JS_Functions {
 //
 //        return h1;
 //    }      
+
+    /**
+     *
+     * @return
+     */
         
     
 
@@ -141,8 +160,10 @@ public class JS_Functions {
         return h1;
     }
 
-    
-    
+    /**
+     *
+     * @return
+     */
     public static String JS_convertCanvasToImage() {
         String h1 = "";
         String h2 = "function convertCanvasToImage() {\n";
@@ -163,6 +184,10 @@ public class JS_Functions {
         return h4;
     }
     
+    /**
+     *
+     * @return
+     */
     public static String JS_canvas2image() {
         String h1 = "";
         StringBuilder builder = new StringBuilder();
@@ -180,6 +205,10 @@ public class JS_Functions {
         return h1;
     }
     
+    /**
+     *
+     * @return
+     */
     public static String JS_createPDFObject() {
         String h1 = "";
         String h2 = "function createPDFObject(imgData) {\n"
@@ -192,6 +221,10 @@ public class JS_Functions {
         return h2;
     }    
     
+    /**
+     *
+     * @return
+     */
     public static String JS_DraggablePoints_All_Together() {
         String h1 = "";
         
@@ -316,6 +349,10 @@ public class JS_Functions {
  return h1;
     }  
   
+    /**
+     *
+     * @return
+     */
     public static String JS_DraggablePoints() {
 
         String h1 = "";
@@ -458,6 +495,10 @@ public class JS_Functions {
         return h1;
     }
     
+    /**
+     *
+     * @return
+     */
     public static String JS_DraggablePointCombo() {
     
     String h1="";
@@ -598,6 +639,10 @@ public class JS_Functions {
     return h1;
     }
     
+    /**
+     *
+     * @return
+     */
     public static String JS_Loading() {
         String h1 = "";
 
@@ -625,6 +670,10 @@ public class JS_Functions {
         return h1;
     }
 
+    /**
+     *
+     * @return
+     */
     public static String JS_PointDrag() {
 
         String h1 = "";
@@ -661,7 +710,10 @@ public class JS_Functions {
 
     }
     
-    
+    /**
+     *
+     * @return
+     */
     public static String JS_onResize() {
         String h1 = "";
 
@@ -676,6 +728,10 @@ public class JS_Functions {
         return h1;
     }
     
+    /**
+     *
+     * @return
+     */
     public static String JS_ChartsArray() {
         String h1 = "";
         String h2 = "\nvar chartArr = [];\n";
@@ -697,6 +753,10 @@ public class JS_Functions {
         return h1;
     }
     
+    /**
+     *
+     * @return
+     */
     public static String JS_WindowsOnLoad() {
         String h1 = "";
 
@@ -712,7 +772,11 @@ public class JS_Functions {
         return h1;
     }
     
-    
+    /**
+     *
+     * @param t
+     * @return
+     */
     public static String JS_MultiArray2One(Integer t) {
         String h1 = "";
         
@@ -724,6 +788,10 @@ public class JS_Functions {
         return h1;
     }
     
+    /**
+     *
+     * @return
+     */
     public static String JS_RenderPDF() {
         String h1 = "";
 
@@ -748,6 +816,10 @@ public class JS_Functions {
         return h1;
     }
 
+    /**
+     *
+     * @return
+     */
     public static String JS_CanvasVars() {
         String h1 = "";
         
@@ -761,7 +833,10 @@ public class JS_Functions {
         return h1;
     }
     
-    
+    /**
+     *
+     * @return
+     */
     public static String JS_Get_eChartCanvas() {
         String h1 = "";
         StringBuilder builder = new StringBuilder();
@@ -777,6 +852,10 @@ public class JS_Functions {
         return h1;
     }
     
+    /**
+     *
+     * @return
+     */
     public static String JS_Get_eChartImage() {
     String h1="";
         StringBuilder builder = new StringBuilder();
@@ -794,6 +873,10 @@ public class JS_Functions {
         h1 = builder.toString();    
    return h1; }
     
+    /**
+     *
+     * @return
+     */
     public static String JS_Func_Canvas() {
         String h1 = "";
 
@@ -873,8 +956,10 @@ public class JS_Functions {
         return h1;
     }
     
-    
-    
+    /**
+     *
+     * @return
+     */
     public static String JS_PrintCanvasFunction() {
     String h1="";
     
@@ -893,6 +978,10 @@ public class JS_Functions {
    
     return h1;}
 
+    /**
+     *
+     * @return
+     */
     public static String JS_imgLoad() {
         String h1 = "";
 
@@ -906,6 +995,10 @@ public class JS_Functions {
     
     return h2;}
     
+    /**
+     *
+     * @return
+     */
     public static String JS_CanvasFuncPrint() {
     String h1="";
             StringBuilder builder = new StringBuilder();
@@ -938,9 +1031,10 @@ public class JS_Functions {
         h1 = builder.toString();
    return h1; }
     
-    
-    
-    
+    /**
+     *
+     * @return
+     */
     public static String JS_DownloadImpByChart() {
          String h1="";
          
@@ -990,6 +1084,10 @@ public class JS_Functions {
         return h1;
     }
     
+    /**
+     *
+     * @return
+     */
     public static String JS_DownImgs() {
               
         String kkk1 = ""
@@ -1053,7 +1151,10 @@ public class JS_Functions {
         
     return h1+h11+builder3.toString()+jjj1;}
     
-    
+    /**
+     *
+     * @return
+     */
     public static String CanvasCharts() {
         String h1 = "\n";
         String p1 = "\nvar canvasCharts = [];\n";
@@ -1065,7 +1166,11 @@ public class JS_Functions {
         return h11;
     }    
     
-        public static String CanvasCTX() {
+    /**
+     *
+     * @return
+     */
+    public static String CanvasCTX() {
         String h1 = "\n";
         String p1 = "\nvar canvasIDs = [];\n";
         StringBuilder builder1 = new StringBuilder();
@@ -1079,6 +1184,10 @@ public class JS_Functions {
         return h11;
     }
     
+    /**
+     *
+     * @return
+     */
     public static String ImageToDataURL() {
         String h1 = "\n";
         String p1 = "\nvar imagesToUrl = [];\n";
@@ -1090,6 +1199,10 @@ public class JS_Functions {
         return h11;
     }
     
+    /**
+     *
+     * @return
+     */
     public static String ImageGetDataURL() {
         String h1 = "\n";
         String p1 = "\nvar imagesGetUrl = [];\n";
@@ -1101,8 +1214,10 @@ public class JS_Functions {
         return h11;
     } 
     
-   
-    
+    /**
+     *
+     * @return
+     */
     public static String JS_GetCanvasURL() {
         String h1 = "";
     
@@ -1157,9 +1272,12 @@ h1 = "var img = new Image();\n" +
         return h2;
     }
     
-    
-    
-      public static String JS_jsPdfExport() throws IOException {
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
+    public static String JS_jsPdfExport() throws IOException {
         String h1 = "";
 
         String pp1 = ""
@@ -1370,8 +1488,12 @@ String h11 = pp1 + builder1.toString() + pp2;
         return h11;
     }
     
-
-      public static String JS_jsPdfExport_PRODVIEW() throws IOException {
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
+    public static String JS_jsPdfExport_PRODVIEW() throws IOException {
         String h1 = "";
 
         String pp1 = "\n"
@@ -1584,11 +1706,11 @@ String h11 = pp1 + builder1.toString() + pp2;
         return h11;
     }
     
- 
-
-    
-    
-    
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
     public String ImageFinalToPrint() throws IOException  {
         String h1 = "";
         StringBuilder builder = new StringBuilder();
@@ -1661,7 +1783,10 @@ String tablehtml = "/*\n"
         return builder.toString()+canvasAll+tablehtml;
     }
     
-    
+    /**
+     *
+     * @return
+     */
     public static String JS_ConvertRender() {
         String h1 = "";
 
@@ -1692,7 +1817,11 @@ String tablehtml = "/*\n"
         return h1;
     }
     
-    
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
     public static String JS_ExportButtonFunction() throws IOException {
         String h1 = "\n\n";
         h1 = "\n\n$(\"#exportButton\").click(function(){\n"
@@ -1732,8 +1861,10 @@ chart_img = chart.getDataURL()
 <img v-if="print_mode" class="print-only" :src="chart_img"></img>
     */
     
-    
-    
+    /**
+     *
+     * @return
+     */
     public static String GetImageBase64string() {
         String h1 = "";
         StringBuilder builder = new StringBuilder();
@@ -1764,6 +1895,10 @@ chart_img = chart.getDataURL()
         return h1;
     }
     
+    /**
+     *
+     * @return
+     */
     public static String GetCanvas_ExportPictures() {
         String h1 = "";
 
@@ -1814,7 +1949,11 @@ chart_img = chart.getDataURL()
         return h1;
     }
     
-    
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
     public static String HTML2Canvas_Table_Print() throws IOException{
         String h1 = "";
         String pp1 = "\npdf.setProperties({\n"
@@ -1900,7 +2039,11 @@ chart_img = chart.getDataURL()
         return j2;
     }
     
-    
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
     public static String CamImagesPDFmake() throws IOException {
         String h1 = "";
         h1 = "function CamImagesToPDF() {\n";
@@ -1950,6 +2093,10 @@ chart_img = chart.getDataURL()
         
  return ReurnFunct;}
     
+    /**
+     *
+     * @return
+     */
     public static String JS_getFullCanvasDataURL() {
         String h1 = "";
         h1 = "\n\ngetFullCanvasDataURL(divId){\n"
@@ -1974,7 +2121,10 @@ chart_img = chart.getDataURL()
         return h1;
     }
     
-    
+    /**
+     *
+     * @return
+     */
     public static String ArrowMouseEvents() {
         String h1 = "";
         String h2 =" var txt1 = arrow_ccw;\n"

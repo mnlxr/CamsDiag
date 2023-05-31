@@ -14,7 +14,12 @@ import javax.swing.JPanel;
  */
 public class Tabs {
     
-        public static void setPanelEnabled(JPanel panel, Boolean isEnabled) {
+    /**
+     *
+     * @param panel
+     * @param isEnabled
+     */
+    public static void setPanelEnabled(JPanel panel, Boolean isEnabled) {
         panel.setEnabled(isEnabled);
 
         Component[] components = panel.getComponents();

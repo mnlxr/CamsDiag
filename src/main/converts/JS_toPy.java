@@ -23,7 +23,13 @@ import static main.CamReqs.MainInfo.CamJobName;
  */
 public class JS_toPy {
     
-      public static void main(String args[]) throws FileNotFoundException, IOException {
+    /**
+     *
+     * @param args
+     * @throws FileNotFoundException
+     * @throws IOException
+     */
+    public static void main(String args[]) throws FileNotFoundException, IOException {
           try {
               ReadJS_File_UserData();
           } catch (ScriptException ex) {
@@ -31,7 +37,12 @@ public class JS_toPy {
           }
       }
     
-    
+    /**
+     *
+     * @throws ScriptException
+     * @throws FileNotFoundException
+     * @throws IOException
+     */
     public static void ReadJS_File_UserData() throws ScriptException, FileNotFoundException, IOException {
         ScriptEngineManager mgr = new ScriptEngineManager();
     ScriptEngine engine = mgr.getEngineByName("JavaScript");

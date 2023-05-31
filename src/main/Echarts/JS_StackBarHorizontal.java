@@ -23,10 +23,19 @@ import static main.common.MainVars.Cam_StackBar_js;
  */
 public class JS_StackBarHorizontal {
 
+    /**
+     *
+     * @param args
+     * @throws Exception
+     */
     public static void main(String args[]) throws Exception {
         StBar_Ph();
     }
 
+    /**
+     *
+     * @throws IOException
+     */
     public static void StBar_Ph() throws IOException {
         File statText = new File(PathWebServer + "//" + mainFolder + "//" + CamJobName() + "//" + Cam_StackBar_js);
 
@@ -43,6 +52,10 @@ public class JS_StackBarHorizontal {
         }
     }
 
+    /**
+     *
+     * @return
+     */
     public static String StBarChart() {
         String h1 = "";
         h1 = ""

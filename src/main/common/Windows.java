@@ -52,8 +52,13 @@ import static main.pros.SystemProps.ReadProp_port;
  */
 public class Windows {
     
-    
-        public static String CheckProcessTaskManager(String process) throws IOException {
+    /**
+     *
+     * @param process
+     * @return
+     * @throws IOException
+     */
+    public static String CheckProcessTaskManager(String process) throws IOException {
         String h1 = "";
         String line;
         String pidInfo = "";
@@ -75,8 +80,13 @@ public class Windows {
 
     }
     
-    
-        public static boolean CheckProcessBTaskManager(String process) throws IOException {
+    /**
+     *
+     * @param process
+     * @return
+     * @throws IOException
+     */
+    public static boolean CheckProcessBTaskManager(String process) throws IOException {
         boolean h1 = true;
         String line;
         String pidInfo = "";
@@ -98,7 +108,10 @@ public class Windows {
 
     } 
         
-        
+    /**
+     *
+     * @throws IOException
+     */
     public static void EraseLast_Job() throws IOException {
             String lastjob=Read_CAM_Job_General(CamsDiag_JobName);
             File file = new File(lastjob);
@@ -118,6 +131,10 @@ public class Windows {
 //        f.close();
     }      
         
+    /**
+     *
+     * @param dir
+     */
     public static void deleteDirS(File dir) {
         File[] files = dir.listFiles();
         if (files != null) {
@@ -144,7 +161,11 @@ public class Windows {
         return content;
     }    
     
-    
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
     public static String Check_WEBServer_Status() throws IOException {
         String h1 = "";
         String j1 = "";
@@ -164,6 +185,13 @@ public class Windows {
         return j1;
     }
         
+    /**
+     *
+     * @return
+     * @throws IOException
+     * @throws ExceptionInInitializerError
+     * @throws URISyntaxException
+     */
     public Icon WebServer_statusIcon() throws IOException, ExceptionInInitializerError, URISyntaxException {
         ImageIcon j1 = null;
         String h2 = "";
@@ -183,8 +211,10 @@ public class Windows {
         return j1;
     }
     
-    
-
+    /**
+     *
+     * @return
+     */
     public static String Check_WebLibs() {
         String h1 = "";    
         try {
@@ -204,6 +234,10 @@ public class Windows {
             }
    return h1; }
             
+    /**
+     *
+     * @return
+     */
     public static String Check_PathWebServer() {
         String h1 = "";
         try {
@@ -241,7 +275,10 @@ public class Windows {
         }
     }
 
-    
+    /**
+     *
+     * @throws IOException
+     */
     public static void UserDataBackUp() throws IOException {
         String username = UserInfo.Get_UserName().toLowerCase();
         String folder_user = "";
@@ -271,14 +308,23 @@ public class Windows {
         //SedCamJobUserData();
     }
 
-
-    
+    /**
+     *
+     * @param prop
+     * @return
+     */
     public static String getPropertyAsString(Properties prop) {    
   StringWriter writer = new StringWriter();
   prop.list(new PrintWriter(writer));
   return writer.getBuffer().toString();
 }
     
+    /**
+     *
+     * @param s
+     * @return
+     * @throws IOException
+     */
     public Properties parsePropertiesString(String s) throws IOException {
     // grr at load() returning void rather than the Properties object
     // so this takes 3 lines instead of "return new Properties().load(...);"
@@ -287,7 +333,11 @@ public class Windows {
     return p;
 }
     
-        
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
     public static String CheckNGINX() throws IOException {
         //boolean b1 = Windows.CheckProcessBTaskManager("nginx.exe");
         String h1 = "nginx Web Server";
@@ -300,7 +350,11 @@ public class Windows {
         return h2;
     }
 
-        
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
     public Icon NGIXstatusIcon() throws IOException {
         ImageIcon h1 = null;
         if (CheckNGINX().endsWith(" is Running")) {
@@ -312,8 +366,11 @@ public class Windows {
         return h1;
     }
     
-    
-    
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
     public static boolean CheckNGINX_Boolean() throws IOException {
         boolean b1 = Windows.CheckProcessBTaskManager("nginx.exe");
 
@@ -326,7 +383,11 @@ public class Windows {
         return h2;
     }   
     
-    
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
     public static String CheckApache() throws IOException {
         //boolean b1 = Windows.CheckProcessBTaskManager("nginx.exe");
         String h1 = "Apache Web Server";
@@ -339,6 +400,11 @@ public class Windows {
         return h2;
     }    
     
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
     public static boolean CheckApache_Boolean() throws IOException {
         boolean b1 = Windows.CheckProcessBTaskManager("httpd.exe");
 
@@ -351,7 +417,11 @@ public class Windows {
         return h2;
     }     
     
-    
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
     public Icon ApachestatusIcon() throws IOException {
         ImageIcon h1 = null;
         if (CheckApache().endsWith(" is Running")) {
@@ -363,7 +433,9 @@ public class Windows {
         return h1;
     }    
     
-    
+    /**
+     *
+     */
     public static void StartWebServer_EXE() {
         /*Runtime.
    getRuntime().
@@ -380,7 +452,10 @@ public class Windows {
     }
      
     
-    /** Returns an ImageIcon, or null if the path was invalid. */
+    /** Returns an ImageIcon, or null if the path was invalid.
+     * @param path
+     * @param description
+     * @return  */
 public  ImageIcon createImageIcon(String path,
                                            String description) {
     java.net.URL imgURL = getClass().getResource(path);
@@ -392,7 +467,10 @@ public  ImageIcon createImageIcon(String path,
     }
 }
 
-
+    /**
+     *
+     * @return
+     */
     public static String MousePoints() {
        
         Integer[] i = null;
@@ -413,6 +491,12 @@ return str;
 //        h1 = "http://localhost:"+Folders.portNginx +"/"+mainFolder+"/";
 //        return h1;
 //    }
+
+    /**
+     *
+     * @return
+     * @throws URISyntaxException
+     */
     
         public static String WebServerPathApache() throws URISyntaxException {
         String h1 = "";
@@ -420,34 +504,55 @@ return str;
         return h1;
     }
     
-        public static String WebServerPathNginx() throws URISyntaxException {
+    /**
+     *
+     * @return
+     * @throws URISyntaxException
+     */
+    public static String WebServerPathNginx() throws URISyntaxException {
         String h1 = "";
         h1 = "http://localhost:"+Folders.portNginx +"/"+mainFolder+"/";
         return h1;
     }
 
-  
-    
-        
-        
+    /**
+     *
+     * @return
+     */
     public static String LibPath_HTML_Windir() {
     String h1="";
     h1="../MnIT_libs";
     return h1;}
     
+    /**
+     *
+     * @return
+     */
     public static String LibPathServer_HTML_Windir() {
     String h1="";
     h1="../../MnIT_libs";
     return h1;}    
     
-        public static String WebServer_LastJob() throws URISyntaxException, IOException {
+    /**
+     *
+     * @return
+     * @throws URISyntaxException
+     * @throws IOException
+     */
+    public static String WebServer_LastJob() throws URISyntaxException, IOException {
         String h1 = "";
         h1 = MainLinkWEB()+MainInfo.CamJobName();
         //h1 = WebServerPath()+MainInfo.CamJobName();
         return h1;
     }
     
-      public static String WebServer_LastJobW() throws URISyntaxException, IOException {
+    /**
+     *
+     * @return
+     * @throws URISyntaxException
+     * @throws IOException
+     */
+    public static String WebServer_LastJobW() throws URISyntaxException, IOException {
         String h1 = "";
         h1 = WebServerPath()+MainInfo.CamJobName();
         return h1;
@@ -464,7 +569,10 @@ return str;
             /* TODO: error handling */ }
     }
     
-
+    /**
+     *
+     * @return
+     */
     public static String ZipDate() {
     String h1="";
     Date date = new Date();
@@ -473,6 +581,10 @@ System.out.println(formatter.format(date));
 h1 = formatter.format(date);
     return h1;}
     
+    /**
+     *
+     * @return
+     */
     public static String DataBackUpDate() {
     String h1="";
     Date date = new Date();
@@ -481,8 +593,11 @@ System.out.println(formatter.format(date));
 h1 = formatter.format(date);
     return h1;}    
     
-    
-    
+    /**
+     *
+     * @param directoryToBeDeleted
+     * @return
+     */
     public static boolean DeleteDirectory(File directoryToBeDeleted) {
     File[] allContents = directoryToBeDeleted.listFiles();
     if (allContents != null) {
@@ -493,10 +608,12 @@ h1 = formatter.format(date);
     return directoryToBeDeleted.delete();
 }
     
-    
-    
-
-            public static String CheckInternetConnection() throws IOException {
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
+    public static String CheckInternetConnection() throws IOException {
         
         String h1 = "Internet Connection : ";
         String h2 = "";
@@ -508,7 +625,12 @@ h1 = formatter.format(date);
         return h2;
     }
 
-            public static String CheckCamsDiagConnection() throws IOException {
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
+    public static String CheckCamsDiagConnection() throws IOException {
         
         String h1 = MainVars.aniscamsdiag01+" Connection : ";
         String h2 = "";
@@ -522,7 +644,11 @@ h1 = formatter.format(date);
         return h2;
     }            
             
-        
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
     public Icon InternetConnectionStatusIcon() throws IOException {
         ImageIcon h1 = null;
         if (CheckInternetConnection().endsWith(" is OK")) {

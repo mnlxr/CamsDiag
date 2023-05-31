@@ -26,12 +26,19 @@ import main.info.UserInfo;
  */
 public class DB_sqlite_js {
     
-    
-        public static void main(String args[]) throws Exception {
+    /**
+     *
+     * @param args
+     * @throws Exception
+     */
+    public static void main(String args[]) throws Exception {
         DB_Main();
     }
     
-    
+    /**
+     *
+     * @return
+     */
     public static String DBwrite() {
         String h1 = "";
         String h2 = UserInfo.Get_UserName();
@@ -52,7 +59,10 @@ public class DB_sqlite_js {
         return h1;
     }
     
-    
+    /**
+     *
+     * @throws IOException
+     */
     public static void DB_Main() throws IOException {
         File statText = new File(PathWebServer+"//MnIT_libs//db//"+ dbjsfile);
 

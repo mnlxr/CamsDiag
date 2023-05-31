@@ -17,6 +17,11 @@ import main.info.UserInfo;
  */
 public class Echarts_SetOptions {
 
+    /**
+     *
+     * @param t
+     * @return
+     */
     public static String CamChartSetOptions(Integer t) {
         String h1 = "";
         h1 = CamChart_Variables(t)
@@ -46,6 +51,11 @@ public class Echarts_SetOptions {
         return h1;
     }
 
+    /**
+     *
+     * @param t
+     * @return
+     */
     public static String CamChart_Variables(Integer t) {
         String h1 = "";
         h1 = "\n"
@@ -111,6 +121,11 @@ public class Echarts_SetOptions {
         return h1;
     }
 
+    /**
+     *
+     * @param t
+     * @return
+     */
     public static String CamChart_Title(Integer t) {
         String h1 = "";
         h1 = "title: {\n"
@@ -136,6 +151,11 @@ public class Echarts_SetOptions {
         return h1;
     }
 
+    /**
+     *
+     * @param t
+     * @return
+     */
     public static String CamChart_Legend(Integer t) {
         String h1 = "";
         h1 = "legend: {\n"
@@ -156,6 +176,11 @@ public class Echarts_SetOptions {
         return h1;
     }
 
+    /**
+     *
+     * @param t
+     * @return
+     */
     public static String CamChart_Toolbox(Integer t) {
         String h1 = "";
         h1 = "toolbox: {\n"
@@ -191,6 +216,11 @@ public class Echarts_SetOptions {
         return h1;
     }
 
+    /**
+     *
+     * @param t
+     * @return
+     */
     public static String CamChart_Tooltip(Integer t) {
         String h1 = "";
         h1 = "tooltip: {\n"
@@ -235,6 +265,11 @@ public class Echarts_SetOptions {
         return h1;
     }
 
+    /**
+     *
+     * @param t
+     * @return
+     */
     public static String CamChart_Dataset_ecStat_regression(Integer t) {
         String h1 = "";
         h1 = "dataset: [{\n"
@@ -253,6 +288,10 @@ public class Echarts_SetOptions {
         return h1;
     }
     
+    /**
+     *
+     * @return
+     */
     public static String CamChart_Grid() {
         String h1 = "";
         h1 = "grid: {\n"
@@ -266,6 +305,10 @@ public class Echarts_SetOptions {
         return h1;
     }
 
+    /**
+     *
+     * @return
+     */
     public static String CamChart_TextStyle() {
         String h1 = "";
         h1 = "textStyle: {\n"
@@ -274,6 +317,11 @@ public class Echarts_SetOptions {
         return h1;
     }
 
+    /**
+     *
+     * @param t
+     * @return
+     */
     public static String CamChart_dataZoom(Integer t) {
         String h1 = "";
         h1 = "dataZoom: [\n"
@@ -326,7 +374,10 @@ public class Echarts_SetOptions {
         return h1;
     }
     
-    
+    /**
+     *
+     * @return
+     */
     public static String CamChart_VisualMap() {
         String h1 = "";
         h1 = "visualMap: "
@@ -381,6 +432,11 @@ public class Echarts_SetOptions {
         return h1;
     }
 
+    /**
+     *
+     * @param t
+     * @return
+     */
     public static String CamChart_xAxis(Integer t) {
         String h1 = "";
 
@@ -428,6 +484,11 @@ public class Echarts_SetOptions {
         return h1;
     }
 
+    /**
+     *
+     * @param t
+     * @return
+     */
     public static String CamChart_yAxis(Integer t) {
         String h1 = "";
         
@@ -482,6 +543,11 @@ public class Echarts_SetOptions {
         return h1;
     }
 
+    /**
+     *
+     * @param t
+     * @return
+     */
     public static String CamChart_Series_Scatter(Integer t) {
         String h1 = "";
         h1 = "    series: [{\n"
@@ -500,6 +566,11 @@ public class Echarts_SetOptions {
         return h1;
     }
     
+    /**
+     *
+     * @param t
+     * @return
+     */
     public static String CamChart_Series_Polar(Integer t) {
         String h1 = "";
         h1 = "    series: [{\n"
@@ -511,6 +582,10 @@ public class Echarts_SetOptions {
         return h1;
     }    
     
+    /**
+     *
+     * @return
+     */
     public static String CamChart_Polar_AngleAxis() {
         String h1 = "";
         h1 = "    angleAxis: {\n"
@@ -520,6 +595,10 @@ public class Echarts_SetOptions {
         return h1;
     }
 
+    /**
+     *
+     * @return
+     */
     public static String CamChart_Polar_Options() {
         String h1 = "";
         h1 = "polar: {},\n"
@@ -527,6 +606,11 @@ public class Echarts_SetOptions {
         return h1;
     }  
     
+    /**
+     *
+     * @param t
+     * @return
+     */
     public static String CamChart_WaterMark(Integer t) {
         String h1 = "";
         h1 = "var waterMarkText = cam" + t + "label;\n"
@@ -544,6 +628,11 @@ public class Echarts_SetOptions {
         return h1;
     }
     
+    /**
+     *
+     * @param t
+     * @return
+     */
     public static String CamChart_BackGroundColor(Integer t) {
         String h1 = "";
         h1 = "    backgroundColor: {\n"
@@ -554,6 +643,11 @@ public class Echarts_SetOptions {
         return h1;
     }   
     
+    /**
+     *
+     * @param t
+     * @return
+     */
     public static String CamChart_Series(Integer t) {
         String h1 = "";
         h1 = "    series: [{\n"
@@ -601,6 +695,11 @@ public class Echarts_SetOptions {
         return h1;
     }
 
+    /**
+     *
+     * @param t
+     * @return
+     */
     public static String CamChartDatGUI_ShaftArea(Integer t) {
         String h1 = "";
 
@@ -625,6 +724,11 @@ public class Echarts_SetOptions {
         return h1;
     }
 
+    /**
+     *
+     * @param t
+     * @return
+     */
     public static String CamChartDatGUI_MarkLine(Integer t) {
         String h1 = "";
         h1 = "markLine: {\n"
@@ -649,6 +753,11 @@ public class Echarts_SetOptions {
         return h1;
     }
 
+    /**
+     *
+     * @param t
+     * @return
+     */
     public static String CamChartDatGUI_MarkArea(Integer t) {
         String h1 = "";
         h1 = "markArea: {\n"
@@ -688,6 +797,11 @@ public class Echarts_SetOptions {
         return h1;
     }
 
+    /**
+     *
+     * @param t
+     * @return
+     */
     public static String CamChart_Series_MarkLine(Integer t) {
         String h1 = "";
         h1 = "markLine: {\n"
@@ -712,6 +826,11 @@ public class Echarts_SetOptions {
         return h1;
     }
 
+    /**
+     *
+     * @param t
+     * @return
+     */
     public static String CamChart_Series_MarkArea(Integer t) {
         String h1 = "";
         h1 = "markArea: {\n"
@@ -750,6 +869,11 @@ public class Echarts_SetOptions {
         return h1;
     }
 
+    /**
+     *
+     * @param t
+     * @return
+     */
     public static String CamChart_Graphic01(Integer t) {
         String h1 = "";
 
@@ -1112,6 +1236,13 @@ ShaftCircles = "children: [\n"
     }
 
     /*Dat GUI Settings*/
+
+    /**
+     *
+     * @param t
+     * @return
+     */
+
     public static String CamChart_DatGUI(Integer t) {
         String h1 = "";
         h1 = CamChart_DatGUI_config()
@@ -1158,6 +1289,10 @@ ShaftCircles = "children: [\n"
         return h1;
     }
 
+    /**
+     *
+     * @return
+     */
     public static String CamChart_DatGUI_config() {
         String h1 = "";
         h1 = "var config = {\n"
@@ -1183,6 +1318,10 @@ ShaftCircles = "children: [\n"
         return h1;
     }
 
+    /**
+     *
+     * @return
+     */
     public static String CamChart_DatGUI_obj() {
         String h1 = "";
         h1 = "var obj = {\n"
@@ -1200,6 +1339,11 @@ ShaftCircles = "children: [\n"
         return h1;
     }
 
+    /**
+     *
+     * @param t
+     * @return
+     */
     public static String CamChartDatGUI_Labels(Integer t) {
         String h1 = "";
         StringBuilder builder = new StringBuilder();
@@ -1222,6 +1366,11 @@ ShaftCircles = "children: [\n"
         return h1;
     }
 
+    /**
+     *
+     * @param t
+     * @return
+     */
     public static String CamChartDatGUI_SymbolSize(Integer t) {
         String h1 = "";
         h1 = "";
@@ -1243,6 +1392,11 @@ ShaftCircles = "children: [\n"
         return h1;
     }
 
+    /**
+     *
+     * @param t
+     * @return
+     */
     public static String CamChartDatGUI_Toolbox(Integer t) {
         String h1 = "";
         h1 = "";
@@ -1264,6 +1418,11 @@ ShaftCircles = "children: [\n"
         return h1;
     }
     
+    /**
+     *
+     * @param t
+     * @return
+     */
     public static String CamChartDatGUI_Smooth(Integer t) {
         String h1 = "";
         h1 = "";
@@ -1285,6 +1444,11 @@ ShaftCircles = "children: [\n"
         return h1;
     }    
 
+    /**
+     *
+     * @param t
+     * @return
+     */
     public static String CamChartDatGUI_WaterMark(Integer t) {
         String h1 = "";
         h1 = "";
@@ -1304,6 +1468,11 @@ ShaftCircles = "children: [\n"
         return h1;
     }    
     
+    /**
+     *
+     * @param t
+     * @return
+     */
     public static String CamChartDatGUI_Legend(Integer t) {
         String h1 = "";
         h1 = "";
@@ -1325,6 +1494,11 @@ ShaftCircles = "children: [\n"
         return h1;
     }
 
+    /**
+     *
+     * @param t
+     * @return
+     */
     public static String CamChartDatGUI_Title(Integer t) {
         String h1 = "";
         h1 = "";
@@ -1346,6 +1520,11 @@ ShaftCircles = "children: [\n"
         return h1;
     }
 
+    /**
+     *
+     * @param t
+     * @return
+     */
     public static String CamChartDatGUI_LineWidth(Integer t) {
         String h1 = "";
         h1 = "";
@@ -1369,6 +1548,11 @@ ShaftCircles = "children: [\n"
         return h1;
     }
 
+    /**
+     *
+     * @param t
+     * @return
+     */
     public static String CamChartDatGUI_Axis(Integer t) {
         String h1 = "";
         h1 = "";
@@ -1418,6 +1602,11 @@ ShaftCircles = "children: [\n"
         return h1;
     }
 
+    /**
+     *
+     * @param t
+     * @return
+     */
     public static String CamChartDatGUI_Grid(Integer t) {
         String h1 = "";
         h1 = "";
@@ -1439,6 +1628,11 @@ ShaftCircles = "children: [\n"
         return h1;
     }
 
+    /**
+     *
+     * @param t
+     * @return
+     */
     public static String CamChartDatGUI_ChartColor(Integer t) {
         String h1 = "";
         h1 = "";
@@ -1463,6 +1657,11 @@ ShaftCircles = "children: [\n"
         return h1;
     }
 
+    /**
+     *
+     * @param t
+     * @return
+     */
     public static String CamChartDatGUI_Theme(Integer t) {
         String h1 = "";
         h1 = "";
@@ -1497,6 +1696,11 @@ ShaftCircles = "children: [\n"
         return h1;
     }
 
+    /**
+     *
+     * @param t
+     * @return
+     */
     public static String CamChartDatGUI_Graphic(Integer t) {
         String h1 = "";
         StringBuilder builder = new StringBuilder();
@@ -1550,6 +1754,11 @@ ShaftCircles = "children: [\n"
         return h1;
     }
     
+    /**
+     *
+     * @param t
+     * @return
+     */
     public static String Graphic_LabelCam(Integer t) {
         String labelCam = "";
         
@@ -1594,6 +1803,11 @@ ShaftCircles = "children: [\n"
         return labelCam;
     }
     
+    /**
+     *
+     * @param t
+     * @return
+     */
     public static String Graphic_SmallCircle(Integer t) {
         String smallcircle = "\n{\n"
                 + "id: 'CamCircleIn" + t + "',\n"
@@ -1616,6 +1830,11 @@ ShaftCircles = "children: [\n"
         return smallcircle;
     }
 
+    /**
+     *
+     * @param t
+     * @return
+     */
     public static String GraphicDatGUI_SmallCircle(Integer t) {
         String smallcircle = "\n{\n"
                 + "id: 'CamCircleIn" + t + "',\n"
@@ -1638,6 +1857,11 @@ ShaftCircles = "children: [\n"
         return smallcircle;
     }
 
+    /**
+     *
+     * @param t
+     * @return
+     */
     public static String Graphic_BigCircle(Integer t) {
         String bigcircle = "{\n"
                 + "id: 'CamCircleOut" + t + "',\n"
@@ -1676,6 +1900,11 @@ ShaftCircles = "children: [\n"
         return bigcircle;
     }
 
+    /**
+     *
+     * @param t
+     * @return
+     */
     public static String GraphicDatGUI_BigCircle(Integer t) {
         String bigcircle = "{\n"
                 + "id: 'CamCircleOut" + t + "',\n"
@@ -1714,6 +1943,11 @@ ShaftCircles = "children: [\n"
         return bigcircle;
     }
 
+    /**
+     *
+     * @param t
+     * @return
+     */
     public static String CamChart_Graphic(Integer t) {
         String h1 = "";
 

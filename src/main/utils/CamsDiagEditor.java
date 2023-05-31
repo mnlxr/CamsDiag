@@ -48,6 +48,9 @@ public class CamsDiagEditor extends javax.swing.JFrame {
 
     }
 
+    /**
+     *
+     */
     public void StartUpFunctions() {
         camjob02CB.setVisible(false);
         cancelBt02.setVisible(false);
@@ -72,6 +75,9 @@ public class CamsDiagEditor extends javax.swing.JFrame {
         jButton2.setVisible(false);
     }
 
+    /**
+     *
+     */
     public void StartUpFunctionsAfter() {
         camjob02CB.setVisible(true);
         cancelBt02.setVisible(true);
@@ -92,11 +98,19 @@ public class CamsDiagEditor extends javax.swing.JFrame {
         jButton2.setEnabled(false);
     }
 
+    /**
+     *
+     * @return
+     */
     public static String[] DefaultJobEmpty() {
         String[] list = null;
         return list;
     }
 
+    /**
+     *
+     * @throws IOException
+     */
     public void EditCamsNumber() throws IOException {
         if (jCheckBox1.isSelected()) {
             camSlider.setVisible(true);
@@ -118,6 +132,11 @@ public class CamsDiagEditor extends javax.swing.JFrame {
         }
     }
 
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
     public static HashSet<String> CompareFolders() throws IOException {
         String[] listSrc = null;
         String[] listTrg = null;
@@ -139,12 +158,22 @@ public class CamsDiagEditor extends javax.swing.JFrame {
 
     }
 
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
     public static String[] FinalFolders() throws IOException {
         String[] arr = null;
         arr = CompareFolders().toArray(new String[0]);
         return arr;
     }
 
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
     public static Integer NofCams() throws IOException {
         int k = 0;
         String camsnumber = "";
@@ -158,6 +187,11 @@ public class CamsDiagEditor extends javax.swing.JFrame {
         return k;
     }
 
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
     public static String GetAsmDescription() throws IOException {
     String camdesc="";
     
@@ -167,6 +201,11 @@ public class CamsDiagEditor extends javax.swing.JFrame {
     return camdesc;
     }
     
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
     public static String NofCamsSlider() throws IOException {
         int k = 0;
         String camslider = String.valueOf(camSlider.getValue());
@@ -174,11 +213,20 @@ public class CamsDiagEditor extends javax.swing.JFrame {
         return camslider;
     }
     
+    /**
+     *
+     * @return
+     */
     public static Integer NofCamsSliderINT() {
     int k=0;
     k=camSlider.getValue();
     return k;}
 
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
     public static String[] ReadCamsJobsNgix() throws IOException {
 
         String[] list = null;
@@ -204,6 +252,11 @@ public class CamsDiagEditor extends javax.swing.JFrame {
         return list;
     }
 
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
     public static String[] ReadCamsJobsUserBackUp() throws IOException {
 
         String[] list = null;
@@ -229,6 +282,11 @@ public class CamsDiagEditor extends javax.swing.JFrame {
         return list;
     }
 
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
     public static String[] ReadCamsJobsUserBackUp_AfterSelection() throws IOException {
 
         String h1 = "";
@@ -609,6 +667,12 @@ public class CamsDiagEditor extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_saveBtCamsActionPerformed
 
+    /**
+     *
+     * @throws FileNotFoundException
+     * @throws IOException
+     * @throws Exception
+     */
     public static void CamsDiag_Create_NofCamsTXT_Editor() throws FileNotFoundException, IOException, Exception {
         File statText = new File(
                 PathWebServer + "\\"
@@ -641,6 +705,12 @@ public class CamsDiagEditor extends javax.swing.JFrame {
         }
     }
 
+    /**
+     *
+     * @throws FileNotFoundException
+     * @throws IOException
+     * @throws Exception
+     */
     public static void JS_UserDataFile_Editor() throws FileNotFoundException, IOException, Exception {
         File statText = new File(PathWebServer+"//"+mainFolder+"//"+
                 camjob01CB.getSelectedItem().toString() + "//" + camjob01CB.getSelectedItem().toString() + ".js");

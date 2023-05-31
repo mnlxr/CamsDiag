@@ -24,12 +24,17 @@ public class LoadImageApp extends Component {
     BufferedImage img;
   String ImageFileName;
     
-    
-    
+    /**
+     *
+     * @param g
+     */
     public void paint(Graphics g) {
         g.drawImage(img, 0, 0, null);
     }
  
+    /**
+     *
+     */
     public LoadImageApp() {
        try {
            img = ImageIO.read(new File("/main/imgs/info.png"));
@@ -38,6 +43,10 @@ public class LoadImageApp extends Component {
  
     }
  
+    /**
+     *
+     * @return
+     */
     public Dimension getPreferredSize() {
         if (img == null) {
              return new Dimension(100,100);
@@ -46,6 +55,10 @@ public class LoadImageApp extends Component {
        }
     }
  
+    /**
+     *
+     * @param args
+     */
     public static void main(String[] args) {
  
         JFrame f = new JFrame("Load Image Test");

@@ -25,10 +25,21 @@ import static main.common.Folders.mainFolder;
  */
 public class JS_Functions2 {
 
+    /**
+     *
+     * @param args
+     * @throws Exception
+     */
     public static void main(String args[]) throws Exception {
         FilesUploadDnDrop();
     }
 
+    /**
+     *
+     * @throws FileNotFoundException
+     * @throws IOException
+     * @throws Exception
+     */
     public static void CamsDiag_JS_Functions() throws FileNotFoundException, IOException, Exception {
         File statText = new File(PathWebServer + "\\" + mainFolder + "\\" + CamJobName() + ".html");
         FileOutputStream is = new FileOutputStream(statText);
@@ -41,6 +52,10 @@ public class JS_Functions2 {
         }
     }
 
+    /**
+     *
+     * @return
+     */
     public static String FilesUploadDnDrop() {
         String h1 = "";
         h1 = "\n\nfunction handleFileSelect(evt) {\n"
@@ -76,6 +91,10 @@ public class JS_Functions2 {
         return h1;
     }
 
+    /**
+     *
+     * @return
+     */
     public static String DnD_Images() {
         String h1 = "";
         h1 = "\n\nvar dropZone = document.getElementById('dropZone');\n"
@@ -111,7 +130,10 @@ public class JS_Functions2 {
         return h1;
     }
     
-    
+    /**
+     *
+     * @return
+     */
     public static String DnD_JQuery() {
     
     String h1="";

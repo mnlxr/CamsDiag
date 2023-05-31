@@ -25,6 +25,10 @@ import main.info.UserInfo;
  */
 public class Commands {
 
+    /**
+     *
+     * @return
+     */
     public static String PDFlite_Image() {
         String h1 = "";
         String pathExport = main_path_installation + "\\PDFs";
@@ -34,6 +38,10 @@ public class Commands {
         return CMD_final;
     }
     
+    /**
+     *
+     * @return
+     */
     public static String PDFlite_Text() {
         String h1 = "";
         String pathExport = main_path_installation + "\\PDFs";
@@ -43,6 +51,10 @@ public class Commands {
         return CMD_final;
     }    
 
+    /**
+     *
+     * @return
+     */
     public static String Sed_RemoveTrailingSpaces() {
        
         String sedClear = sedwin+" -i -e \"s/^\\s*//\"";
@@ -50,7 +62,10 @@ public class Commands {
         return sedClear;
     }
     
-    
+    /**
+     *
+     * @throws IOException
+     */
     public static void CompilePythonFiles_CamJobs() throws IOException {            
  //           SedCamJobUserData();
 //            CompilePyCamJob();
@@ -84,6 +99,10 @@ public class Commands {
 //        }
 //
 //    }
+
+    /**
+     *
+     */
 
     public static void CompilePyCamJob() {
         try {

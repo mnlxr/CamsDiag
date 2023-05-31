@@ -25,9 +25,11 @@ import static main.common.MainVars.emaildev;
  */
 public class UserInfo {
     
-    
-    
-    
+    /**
+     *
+     * @return
+     * @throws Exception
+     */
     public static String Header_Comments() throws Exception {
         String h1 = "";
         h1 = "\n/*\n"
@@ -52,7 +54,12 @@ public class UserInfo {
         return h1;
     }   
     
-        public static String Header_Comments_Py() throws Exception {
+    /**
+     *
+     * @return
+     * @throws Exception
+     */
+    public static String Header_Comments_Py() throws Exception {
         String h1 = "";
         h1 = "\n#"
                 +"#"+OneLine_Comment()
@@ -74,8 +81,12 @@ public class UserInfo {
         return h1;
     } 
     
-    
-        public static String Set_TimeCountry() throws Exception {
+    /**
+     *
+     * @return
+     * @throws Exception
+     */
+    public static String Set_TimeCountry() throws Exception {
         
         String h2 = "";
         boolean fr_mon = Get_ComputerName().startsWith("MON") || Get_ComputerName().startsWith("VER") || Get_ComputerName().startsWith("CLI");
@@ -89,7 +100,12 @@ public class UserInfo {
         return h2;
     }
     
-        public static String Get_PublicIP() throws Exception {
+    /**
+     *
+     * @return
+     * @throws Exception
+     */
+    public static String Get_PublicIP() throws Exception {
         URL whatismyip = new URL("http://checkip.amazonaws.com");
         BufferedReader in = null;
         try {
@@ -107,9 +123,10 @@ public class UserInfo {
         }
     }
         
-        
-        
-        
+    /**
+     *
+     * @return
+     */
     public static String Get_ComputerName() {
         Map<String, String> env = System.getenv();
         if (env.containsKey("COMPUTERNAME")) {
@@ -121,43 +138,71 @@ public class UserInfo {
         }
     }
 
+    /**
+     *
+     * @return
+     */
     public static String Get_UserName() {
         String h1 = "";
         h1 = System.getProperty("user.name");
         return h1;
     }
 
+    /**
+     *
+     * @return
+     */
     public static String Get_JavaVersion() {
         String h1 = "";
         h1 = System.getProperty("java.version");
         return h1;
     }
 
+    /**
+     *
+     * @return
+     */
     public static String Get_OsVersion() {
         String h1 = "";
         h1 = System.getProperty("os.version");
         return h1;
     }
 
+    /**
+     *
+     * @return
+     */
     public static String Get_OsName() {
         String h1 = "";
         h1 = System.getProperty("os.name");
         return h1;
     }
 
+    /**
+     *
+     * @return
+     */
     public static String Get_OsArch() {
         String h1 = "";
         h1 = System.getProperty("os.arch");
         return h1;
     }
 
+    /**
+     *
+     * @return
+     */
     public static String Get_Vendor() {
         String h1 = "";
         h1 = System.getProperty("java.vm.specification.vendor");
         return h1;
     }
     
-      public static String Get_FormatDateDirSynch_EEST() {
+    /**
+     *
+     * @return
+     */
+    public static String Get_FormatDateDirSynch_EEST() {
         String strDate = "";
         DateFormat sdf;
         Date now = new Date();
@@ -166,6 +211,10 @@ public class UserInfo {
         return strDate;
     }
 
+    /**
+     *
+     * @return
+     */
     public static String Get_FormatDateDirSynch_CEST() {
         String strDate = "";
         DateFormat sdf;
@@ -175,6 +224,10 @@ public class UserInfo {
         return strDate;
     }
 
+    /**
+     *
+     * @return
+     */
     public static String Get_CurrentTimezoneOffset() {
 
         TimeZone tz = TimeZone.getDefault();
@@ -186,7 +239,11 @@ public class UserInfo {
         return offset;
     }
     
-        public static String OneLine_Comment() {
+    /**
+     *
+     * @return
+     */
+    public static String OneLine_Comment() {
         String h1 = "";
         h1 = "\n#//////////////////////////////////////////\n";
         return h1;

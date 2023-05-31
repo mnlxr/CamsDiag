@@ -24,12 +24,19 @@ import static main.common.Windows.LibPath_HTML_Windir;
  */
 public class JS_ReadProps {
     
-            public static void main(String args[]) throws Exception {
+    /**
+     *
+     * @param args
+     * @throws Exception
+     */
+    public static void main(String args[]) throws Exception {
         JS_PropertiesFile();
     }
     
-    
-    
+    /**
+     *
+     * @throws IOException
+     */
     public static void JS_PropertiesFile() throws IOException {
 
         File statText = new File(PathWebServer+"//"+mainFolder+"//"+CamJobName() + "//"+CamsDiag_PropertiesFile);
@@ -40,9 +47,10 @@ public class JS_ReadProps {
         }
     }    
     
-    
-    
-    
+    /**
+     *
+     * @return
+     */
     public static String Readprpsfile() {
         String h1 = "";
 h1="//java;\n"

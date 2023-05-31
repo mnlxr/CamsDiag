@@ -12,6 +12,10 @@ package main.utils;
 import java.awt.*;
 import java.awt.event.*;
  
+/**
+ *
+ * @author MManolas
+ */
 public class SplashDemo extends Frame implements ActionListener {
     static void renderSplashFrame(Graphics2D g, int frame) {
         final String[] comps = {"foo", "bar", "baz"};
@@ -21,6 +25,10 @@ public class SplashDemo extends Frame implements ActionListener {
         g.setColor(Color.BLACK);
         g.drawString("Loading "+comps[(frame/5)%3]+"...", 120, 150);
     }
+
+    /**
+     *
+     */
     public SplashDemo() {
         super("SplashScreen demo");
         setSize(300, 200);
@@ -57,6 +65,11 @@ public class SplashDemo extends Frame implements ActionListener {
         setVisible(true);
         toFront();
     }
+
+    /**
+     *
+     * @param ae
+     */
     public void actionPerformed(ActionEvent ae) {
         System.exit(0);
     }
@@ -67,6 +80,10 @@ public class SplashDemo extends Frame implements ActionListener {
         }
     };
      
+    /**
+     *
+     * @param args
+     */
     public static void main (String args[]) {
         SplashDemo test = new SplashDemo();
     }

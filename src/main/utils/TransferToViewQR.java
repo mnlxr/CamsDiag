@@ -57,7 +57,11 @@ public class TransferToViewQR extends javax.swing.JFrame {
         setExtendedState(java.awt.Frame.MAXIMIZED_BOTH);
     }
 
-   public void listFiles(String startDir) {
+    /**
+     *
+     * @param startDir
+     */
+    public void listFiles(String startDir) {
         try (Stream<Path> walk = Files.walk(Paths.get("D:/Programming"))) {
             // We want to find only regular files
             List<String> result = walk.filter(Files::isRegularFile)
@@ -86,6 +90,10 @@ public class TransferToViewQR extends javax.swing.JFrame {
 //        }
     }    
     
+    /**
+     *
+     * @return
+     */
     public static String DataBackUpDateServer() {
     String h1="";
     Date date = new Date();
@@ -94,6 +102,10 @@ System.out.println(formatter.format(date));
 h1 = formatter.format(date);
     return h1;}  
     
+    /**
+     *
+     * @return
+     */
     public static String DataBackUpDateOnlyServer() {
     String h1="";
     Date date = new Date();
@@ -102,7 +114,9 @@ System.out.println(formatter.format(date));
 h1 = formatter.format(date);
     return h1;}    
    
-   
+    /**
+     *
+     */
     public void CheckNetServer() {
         if (jLabel8.getText().endsWith(" is OK")) {
             jLabel8.setText( MainVars.aniscamsdiag01+" Connection : "+" is OK");
@@ -625,6 +639,12 @@ aniscamsdiag01_Upload
         }
     }//GEN-LAST:event_targetURLlabelMouseClicked
 
+    /**
+     *
+     * @param path
+     * @param description
+     * @return
+     */
     public  ImageIcon createImageIcon(String path,
                                            String description) {
     java.net.URL imgURL = getClass().getResource(path);
@@ -636,6 +656,12 @@ aniscamsdiag01_Upload
     }
 }
     
+    /**
+     *
+     * @param src
+     * @param dest
+     * @throws IOException
+     */
     public  void copyFolder(Path src, Path dest) throws IOException {
         try (Stream<Path> stream = Files.walk(src)) {
             stream.forEach(source -> copy(source, dest.resolve(src.relativize(source))));
@@ -650,11 +676,11 @@ aniscamsdiag01_Upload
         }
     }  
     
-    
-
-
-
-    
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
     public static String[] ReadPRODHTMLfiles() throws IOException {
         String ph1 = CamsDiag_MainPath();
 

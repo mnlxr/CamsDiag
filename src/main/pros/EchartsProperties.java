@@ -18,6 +18,11 @@ import static main.pros.SystemProps.echartsProps;
  */
 public class EchartsProperties {
 
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
     public static String ReadProp_EchartsLabels() throws IOException {
         String h1 = "";
         Properties prop;
@@ -40,6 +45,11 @@ public class EchartsProperties {
         return prop.getProperty(echartsProps + ".labels");
     }
 
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
     public static String ReadProp_EchartsSymbolSize() throws IOException {
         String h1 = "";
         Properties prop;
@@ -57,6 +67,11 @@ public class EchartsProperties {
         return prop.getProperty(echartsProps + ".symbol_size");
     }
 
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
     public static String ReadProp_EchartsTheme() throws IOException {
         String h1 = "";
         Properties prop;
@@ -74,6 +89,11 @@ public class EchartsProperties {
         return prop.getProperty(echartsProps + ".theme");
     }
 
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
     public static String ReadProp_EchartsChartsOpacity1() throws IOException {
         String h1 = "";
         Properties prop;
@@ -91,6 +111,11 @@ public class EchartsProperties {
         return prop.getProperty(echartsProps + ".opacity1");
     }
 
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
     public static String ReadProp_EchartsTextColor() throws IOException {
         String h1 = "";
         Properties prop;
@@ -107,6 +132,11 @@ public class EchartsProperties {
         return prop.getProperty(echartsProps + ".text_color");
     }
 
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
     public static String ReadProp_EchartsBICColor() throws IOException {
         String h1 = "";
         Properties prop;
@@ -124,6 +154,11 @@ public class EchartsProperties {
         return prop.getProperty(echartsProps + ".bic_color");
     }
 
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
     public static String ReadProp_EchartsLineWidth() throws IOException {
         String h1 = "";
         Properties prop;

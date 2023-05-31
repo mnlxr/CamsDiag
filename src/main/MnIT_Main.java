@@ -99,7 +99,7 @@ import main.pdfs.PDFsTexts;
 import static main.pros.SystemProps.CamsDiag_HelpPath;
 import static main.pros.SystemProps.CamsDiag_WebURL;
 import main.tests.Main;
-import static main.tests.Zip.zipFolder;
+import static main.utils.Zip.zipFolder;
 import main.utils.AboutBC_Cams;
 import main.utils.JS_DataEditor_Embedded;
 import main.utils.JS_DataEditor_StandAlone;
@@ -110,11 +110,17 @@ import main.utils.StatusCam;
  */
 public class MnIT_Main extends javax.swing.JFrame {
 
-
+    /**
+     *
+     */
     public String camslider = "";
     private final int maxNumberOfCharacters = 30;
     int currentLetter = 1;
     Graphics g;
+
+    /**
+     *
+     */
     public static String defaultText="-";
 
     Document documentjs;
@@ -131,13 +137,32 @@ public class MnIT_Main extends javax.swing.JFrame {
     static JProgressBar b;
     static JDialog d;
 
-       public static JFrame frameInit;
+    /**
+     *
+     */
+    public static JFrame frameInit;
      //JLabel image=new JLabel(new javax.swing.ImageIcon(getClass().getResource("/main/images/camsdiag01.png")));
+
+    /**
+     *
+     */
     public static JLabel image=new JLabel(new ImageIcon("camsdiag01.png"));
     //javax.swing.ImageIcon(getClass().getResource("/main/images/camsdiag01.png"))
+
+    /**
+     *
+     */
     public static JLabel text=new JLabel("Cams Diagrams - Charts");
+
+    /**
+     *
+     */
     public static JProgressBar progressBar=new JProgressBar();
-   public static  JLabel message=new JLabel();
+
+    /**
+     *
+     */
+    public static  JLabel message=new JLabel();
      
     /**
      * Creates new form MnIT_Main
@@ -159,6 +184,9 @@ public class MnIT_Main extends javax.swing.JFrame {
          CheckForUpdates();
     }
 
+    /**
+     *
+     */
     public  void machineCBVisibility() {
         if (machineMotionCB.isVisible()) {
             
@@ -169,6 +197,9 @@ public class MnIT_Main extends javax.swing.JFrame {
         }
     }
     
+    /**
+     *
+     */
     public void CBox_Visibility() {
         if (machineMotionCB.isSelected() == true) {
             CB_motion.setVisible(true);
@@ -179,19 +210,29 @@ public class MnIT_Main extends javax.swing.JFrame {
         }
     }
     
+    /**
+     *
+     * @return
+     */
     public String CBox_getName() {
         String h1 = "";
         h1 = CB_motion.getSelectedItem().toString();
         return h1;
     }
     
+    /**
+     *
+     * @return
+     */
     public Integer CBox_getIndex(){
     Integer t = 0;
     t = CB_motion.getSelectedIndex();
     return t;
     }
     
-    
+    /**
+     *
+     */
     public static void SplashScreen()
     {
         createGUI();
@@ -201,6 +242,10 @@ public class MnIT_Main extends javax.swing.JFrame {
         addMessage();
         runningPBar();
     }
+
+    /**
+     *
+     */
     public static void createGUI(){
         frameInit=new JFrame();
         frameInit.getContentPane().setLayout(null);
@@ -211,12 +256,20 @@ public class MnIT_Main extends javax.swing.JFrame {
         frameInit.setVisible(true);
 
     }
+
+    /**
+     *
+     */
     public static void addImage(){
         image.setSize(600,225);
         //image.setSize(225,225);
         //600,200
         frameInit.add(image);
     }
+
+    /**
+     *
+     */
     public static void addText()
     {
         text.setFont(new Font("arial",Font.BOLD,20));
@@ -224,6 +277,10 @@ public class MnIT_Main extends javax.swing.JFrame {
         text.setForeground(Color.BLUE);
         frameInit.add(text);
     }
+
+    /**
+     *
+     */
     public static void addMessage()
     {
         message.setBounds(250,320,200,40);
@@ -231,6 +288,10 @@ public class MnIT_Main extends javax.swing.JFrame {
         message.setFont(new Font("arial",Font.BOLD,11));
         frameInit.add(message);
     }
+
+    /**
+     *
+     */
     public static void  addProgressBar(){
         progressBar.setBounds(100,280,400,30);
         progressBar.setBorderPainted(true);
@@ -240,6 +301,10 @@ public class MnIT_Main extends javax.swing.JFrame {
         progressBar.setValue(0);
         frameInit.add(progressBar);
     }
+
+    /**
+     *
+     */
     public static void runningPBar(){
         int i=0;
 
@@ -261,7 +326,9 @@ public class MnIT_Main extends javax.swing.JFrame {
         }
     } 
     
-    
+    /**
+     *
+     */
     public static void fillProgresBar() {
         int i = 0;
         try {
@@ -277,6 +344,9 @@ public class MnIT_Main extends javax.swing.JFrame {
         }
     }
     
+    /**
+     *
+     */
     public static void InitProressBar() {
         {
  
@@ -314,10 +384,18 @@ public class MnIT_Main extends javax.swing.JFrame {
     }
     }
     
+    /**
+     *
+     */
     public static void PBarDialog() {
     
     }
     
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
     public String Get_NumberOFCams_FroSlider() throws IOException {
 
         try {
@@ -327,6 +405,10 @@ public class MnIT_Main extends javax.swing.JFrame {
         return camslider;
     }
 
+    /**
+     *
+     * @throws IOException
+     */
     public void GetInfo_FromUserInput() throws IOException {
         //int x = Integer.parseInt(cam_numbers_slider.getValue());
         DisplayInfo_01.setText(GetInfo_01.getText().trim().toLowerCase()
@@ -338,7 +420,9 @@ public class MnIT_Main extends javax.swing.JFrame {
         cam_numbers_slider.repaint();
     }    
     
-    
+    /**
+     *
+     */
     public void OkButtonCheckText() {
         if (GetInfo_01.getText().isEmpty() == true && DisplayInfo_02.getText().isEmpty()
                 /*&& GetInfo_02.getText().isEmpty() == true*/) {
@@ -352,7 +436,9 @@ public class MnIT_Main extends javax.swing.JFrame {
         SaveButtonColorActive();}
     }
     
-    
+    /**
+     *
+     */
     public void OkButton_Actions() {
         GetInfo_01.setEnabled(false);
         GetInfo_01.setBackground(new java.awt.Color(255, 255, 128));
@@ -367,6 +453,11 @@ public class MnIT_Main extends javax.swing.JFrame {
         CB_motion.setEnabled(false);
     }
     
+    /**
+     *
+     * @throws IOException
+     * @throws Exception
+     */
     public void OkButton_Triggers() throws IOException, Exception {
         //StopNGINX_CMD();          
         Create_CamJobFolder();
@@ -409,6 +500,10 @@ public class MnIT_Main extends javax.swing.JFrame {
 
     }
     
+    /**
+     *
+     * @throws URISyntaxException
+     */
     public void OkButton_AfterGenerate() throws URISyntaxException {
         try {
             weblabel.setText("<html><a href=''>"+WebServer_LastJob()+"</a></html>");
@@ -442,6 +537,11 @@ public class MnIT_Main extends javax.swing.JFrame {
         }
     }
     
+    /**
+     *
+     * @throws URISyntaxException
+     * @throws IOException
+     */
     public void CancelButton_Actions() throws URISyntaxException, IOException {
         GetInfo_01.setEnabled(true);
         GetInfo_01.setText(defaultText);
@@ -482,6 +582,10 @@ public class MnIT_Main extends javax.swing.JFrame {
         
     }    
     
+    /**
+     *
+     * @throws IOException
+     */
     public void Create_MainLOG() throws IOException {
         File file = new File(PathWebServer+"\\"+mainFolder+"\\"+logpath);
         FileWriter fr = new FileWriter(file, true);
@@ -493,6 +597,9 @@ public class MnIT_Main extends javax.swing.JFrame {
         fr.close();
     }    
     
+    /**
+     *
+     */
     public void SaveButtonColorActive() {
         oKbutton.setBackground(Color.green);
         oKbutton.setOpaque(true);
@@ -502,6 +609,9 @@ public class MnIT_Main extends javax.swing.JFrame {
 
     }
 
+    /**
+     *
+     */
     public void SaveButtonColorInactive() {
         oKbutton.setBackground(Color.red);
         oKbutton.setOpaque(true);
@@ -510,6 +620,9 @@ public class MnIT_Main extends javax.swing.JFrame {
         oKbutton.setEnabled(false);
     }    
     
+    /**
+     *
+     */
     public void SaveJSButtonColorActive() {
         saveJS_Button.setBackground(Color.green);
         saveJS_Button.setOpaque(true);
@@ -519,6 +632,9 @@ public class MnIT_Main extends javax.swing.JFrame {
 
     }
 
+    /**
+     *
+     */
     public void SaveJSButtonColorInactive() {
         saveJS_Button.setBackground(Color.red);
         saveJS_Button.setOpaque(true);
@@ -527,10 +643,9 @@ public class MnIT_Main extends javax.swing.JFrame {
         saveJS_Button.setEnabled(false);
     }    
     
-
-
-   
-    
+    /**
+     *
+     */
     public void CheckOkButtonStatus() {
         if (oKbutton.isEnabled() == true) {
             SaveButtonColorActive();
@@ -539,6 +654,11 @@ public class MnIT_Main extends javax.swing.JFrame {
         }
     }
     
+    /**
+     *
+     * @throws IOException
+     * @throws URISyntaxException
+     */
     public void Create_LOG_Full() throws IOException, URISyntaxException {
         String spaces = "                        ";
         File file = new File(PathWebServer+"\\"+mainFolder+"\\"+logpathFull);
@@ -551,6 +671,12 @@ public class MnIT_Main extends javax.swing.JFrame {
         fr.close();
     }
     
+    /**
+     *
+     * @return
+     * @throws IOException
+     * @throws URISyntaxException
+     */
     public  String LogFullStr() throws IOException, URISyntaxException {
     String h1="";
     //"<html><a href=''>"+WebServer_LastJob()+"</a></html>"
@@ -568,9 +694,12 @@ public class MnIT_Main extends javax.swing.JFrame {
                 + spaces + "Python Path : " + WebServerPath() + MainInfo.CamJobName() + "/" + Folders.PythonFolderMainName() + "\n";
     return h1;}
     
-    
-
-public  String LibsIncludedChkBoxString() throws Exception {
+    /**
+     *
+     * @return
+     * @throws Exception
+     */
+    public  String LibsIncludedChkBoxString() throws Exception {
 String h1="";
     if (libs_included.isSelected() == true) {
         h1 = "Libs Included";
@@ -2595,8 +2724,9 @@ CheckForUpdates();
     private javax.swing.JTextArea zip_data;
     // End of variables declaration//GEN-END:variables
 
-    
-    
+    /**
+     *
+     */
     public void SaveJS_EditUserDataFile() {
         try { 
            //UserDataBackUp();
@@ -2617,8 +2747,11 @@ CheckForUpdates();
         }    
     }     
     
-    
-public void executeCommand(String command) {
+    /**
+     *
+     * @param command
+     */
+    public void executeCommand(String command) {
     try {
         log(command);
         Process process = Runtime.getRuntime().exec(command);
@@ -2630,7 +2763,12 @@ public void executeCommand(String command) {
     }
 }
 
-public void logOutput(InputStream inputStream, String prefix) {
+    /**
+     *
+     * @param inputStream
+     * @param prefix
+     */
+    public void logOutput(InputStream inputStream, String prefix) {
     new Thread(() -> {
         Scanner scanner = new Scanner(inputStream, "UTF-8");
         while (scanner.hasNextLine()) {
@@ -2642,9 +2780,10 @@ public void logOutput(InputStream inputStream, String prefix) {
     }).start();
 }
 
-
-
-public void CheckDataTextAreaEmpty() {
+    /**
+     *
+     */
+    public void CheckDataTextAreaEmpty() {
 if (data_edit.getText().isEmpty()  ) 
         {
             jButton5.setEnabled(false);
@@ -2665,7 +2804,10 @@ if (data_edit.getText().isEmpty()  )
         }
 }
 
-public void CheckDataTextAreaDefaultText() {
+    /**
+     *
+     */
+    public void CheckDataTextAreaDefaultText() {
 if (GetInfo_01.getText().contains(defaultText) && GetInfo_02.getText().contains(defaultText) ) 
         {
             jButton5.setEnabled(false);
@@ -2686,6 +2828,11 @@ if (GetInfo_01.getText().contains(defaultText) && GetInfo_02.getText().contains(
         }
 }
 
+    /**
+     *
+     * @param savePath
+     * @param textArea
+     */
     public void TextArea_to_fileWriter(File savePath, JTextArea textArea) {
         try {
             try (BufferedWriter bf = new BufferedWriter(new FileWriter(savePath))) {
@@ -2697,7 +2844,9 @@ if (GetInfo_01.getText().contains(defaultText) && GetInfo_02.getText().contains(
 
     }
 
-    
+    /**
+     *
+     */
     public void SaveJS_UserDataFile() {
         try { 
             UserDataBackUp();
@@ -2712,7 +2861,9 @@ if (GetInfo_01.getText().contains(defaultText) && GetInfo_02.getText().contains(
         }    
     }
     
-
+    /**
+     *
+     */
     public void SavePy_UserDataFile() {
         try {
             UserDataBackUp();
@@ -2748,6 +2899,11 @@ if (GetInfo_01.getText().contains(defaultText) && GetInfo_02.getText().contains(
 //        
 //    }
 
+    /**
+     *
+     * @return
+     */
+
     
     public static String CheckMachineMotion() {
         String h1 = Check_CBox_Vars_Option();
@@ -2760,6 +2916,11 @@ if (GetInfo_01.getText().contains(defaultText) && GetInfo_02.getText().contains(
         return j1;
     }
 
+    /**
+     *
+     * @param t
+     * @return
+     */
     public static String CheckMachineMotionCam(Integer t) {
         String h1 = Check_CBox_MarkArea_Option(t);
         String j1 = "";
@@ -2771,6 +2932,10 @@ if (GetInfo_01.getText().contains(defaultText) && GetInfo_02.getText().contains(
         return j1;
     } 
     
+    /**
+     *
+     * @return
+     */
     public static String CheckMachineMotionCamAll() {
         String h1 = MachineCamAll();
         String j1 = "";
@@ -2782,6 +2947,10 @@ if (GetInfo_01.getText().contains(defaultText) && GetInfo_02.getText().contains(
         return j1;
     }    
     
+    /**
+     *
+     * @return
+     */
     public static String CheckMachineMotionCamArray() {
         String h1 = Check_CBox_Vars_Option();
         String j1 = "";
@@ -2793,7 +2962,9 @@ if (GetInfo_01.getText().contains(defaultText) && GetInfo_02.getText().contains(
         return j1;
     }    
     
-    
+    /**
+     *
+     */
     public void CheckCBDwell() {
         if (machineMotionCB.isSelected()) {
             machineMotionCB.setEnabled(false);
@@ -2803,13 +2974,21 @@ if (GetInfo_01.getText().contains(defaultText) && GetInfo_02.getText().contains(
     
     }
     
-    
-  public static int CamJobExist_YesNoCancel(String theMessage) {
+    /**
+     *
+     * @param theMessage
+     * @return
+     */
+    public static int CamJobExist_YesNoCancel(String theMessage) {
     int result = JOptionPane.showConfirmDialog((Component) null, theMessage,"alert", JOptionPane.YES_NO_CANCEL_OPTION);
     return result;
   }    
     
-        public static String[] ReadHTMLfilesMain() {
+    /**
+     *
+     * @return
+     */
+    public static String[] ReadHTMLfilesMain() {
         
         String[] list = null;
         try {
@@ -2835,7 +3014,11 @@ if (GetInfo_01.getText().contains(defaultText) && GetInfo_02.getText().contains(
         setVisible(false);
         dispose();
     }
-            public static final int RET_CANCEL = 0;
+
+    /**
+     *
+     */
+    public static final int RET_CANCEL = 0;
     /** A return status code - returned if OK button has been pressed */
     public static final int RET_OK = 1;
         

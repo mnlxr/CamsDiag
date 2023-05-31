@@ -15,16 +15,17 @@ import java.net.URL;
  */
 public class CheckConnection {
 
+    /**
+     *
+     */
     public static String urlpath = "https://www.google.gr/";
             
-            
-
-  
-
-    
-    
-    
-        public static boolean CheckStatusSever() throws IOException {
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
+    public static boolean CheckStatusSever() throws IOException {
         boolean b1 = Get_StatusServer_Boolean(urlpath);
         
         if (Get_StatusServer_Boolean(urlpath) == true) {
@@ -41,7 +42,12 @@ public class CheckConnection {
         }
  return b1;}
     
-    
+    /**
+     *
+     * @param url
+     * @return
+     * @throws IOException
+     */
     public static boolean Get_StatusServer_Boolean(String url) throws IOException {
 
         String result = "";
@@ -71,6 +77,12 @@ public class CheckConnection {
 
     }
 
+    /**
+     *
+     * @param url
+     * @return
+     * @throws IOException
+     */
     public static Integer Get_StatusServerInt(String url) throws IOException {
 
         String result = "";

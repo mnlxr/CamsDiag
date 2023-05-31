@@ -24,12 +24,19 @@ import main.info.UserInfo;
  */
 public class JS_globmnit {
     
-    
-        public static void main(String args[]) throws Exception {
+    /**
+     *
+     * @param args
+     * @throws Exception
+     */
+    public static void main(String args[]) throws Exception {
         GlobMnit();
     }
     
-    
+    /**
+     *
+     * @return
+     */
     public static String UniqIDJS() {
         String h1 = "";
         String h2 = UserInfo.Get_UserName();
@@ -47,7 +54,10 @@ public class JS_globmnit {
     return h1;
     }
     
-    
+    /**
+     *
+     * @throws IOException
+     */
     public static void GlobMnit() throws IOException {
         File statText = new File(PathWebServer+"//"+mainFolder+"//"+CamJobName() + "//"+ jsgeneral_js);
 

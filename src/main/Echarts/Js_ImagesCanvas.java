@@ -24,13 +24,20 @@ import static main.common.MainVars.CamsDiag_ImgsCnvs_js;
  */
 public class Js_ImagesCanvas {
   
-    
-    
-        public static void main(String args[]) throws Exception {
+    /**
+     *
+     * @param args
+     * @throws Exception
+     */
+    public static void main(String args[]) throws Exception {
         CamsDiag_ImagesCanvas();
     }    
     
-    
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
     public static String GetDataURL() throws IOException {
         String h1 = "";
         StringBuilder builder1 = new StringBuilder();
@@ -169,8 +176,11 @@ doc.addImage(dataUrl, 'png', 0, 0, 210, 297, undefined, 'FAST');
         return hall;
     }
     
-    
-
+    /**
+     *
+     * @throws FileNotFoundException
+     * @throws IOException
+     */
     public static void CamsDiag_ImagesCanvas() throws FileNotFoundException, IOException {
         File statText = new File(PathWebServer+"//"+mainFolder+"//"+CamJobName() + "//"+ CamsDiag_ImgsCnvs_js);
 

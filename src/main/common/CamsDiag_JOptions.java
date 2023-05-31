@@ -13,6 +13,10 @@ import javax.swing.JOptionPane;
  */
 public class CamsDiag_JOptions {
    
+    /**
+     *
+     * @return
+     */
     public static int ClearBackUpFolder() {
         int input = JOptionPane.showConfirmDialog(null,
                 "Do you want to proceed?", "Empty BackUp Folder..", JOptionPane.YES_NO_CANCEL_OPTION);
@@ -22,7 +26,10 @@ public class CamsDiag_JOptions {
         return input;
     }
     
-    
+    /**
+     *
+     * @return
+     */
     public static int DeleteCamsJobs() {
         int input = JOptionPane.showConfirmDialog(null,
                 "Do you want to proceed?", "Delete Cams Jobs..", JOptionPane.YES_NO_CANCEL_OPTION);

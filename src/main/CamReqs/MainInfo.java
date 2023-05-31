@@ -20,6 +20,10 @@ import static main.common.MainVars.LocalhostName;
  */
 public class MainInfo {
 
+    /**
+     *
+     * @return
+     */
     public static Integer NumberOfCams() {
         Integer h1;
         h1 = 12;
@@ -47,7 +51,10 @@ public class MainInfo {
 //        return jj1;
 //    }   
 
-    
+    /**
+     *
+     * @return
+     */
     public static String NumberOfCams_String() {
     String h3 = "";
         try {
@@ -58,7 +65,11 @@ public class MainInfo {
     return h3;
     }
     
-    
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
     public static String CamJobName() throws IOException {
         String h1 = "";
         h1 = "mamnolas_test_12".toLowerCase();
@@ -80,6 +91,11 @@ public class MainInfo {
 //                
 //        return kk1;
 //    }    
+
+    /**
+     *
+     * @return
+     */
     
     public static String AsmDescription_Label() {
 //    String h1="";
@@ -107,8 +123,12 @@ public class MainInfo {
 //    return ppp1;
 //    }    
     
-    
-        public static String WebServerPath() throws IOException  {
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
+    public static String WebServerPath() throws IOException  {
         String h1 = "";
         String h2 = LocalhostName;
          //h1 = "http://localhost:8158"

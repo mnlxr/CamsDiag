@@ -25,10 +25,19 @@ import static main.common.MainVars.Cam_All_js;
  */
 public class JS_CamAll {
 
+    /**
+     *
+     * @param args
+     * @throws Exception
+     */
     public static void main(String args[]) throws Exception {
         CamParametersChartALL();
     }
 
+    /**
+     *
+     * @throws IOException
+     */
     public static void CamParametersChartALL() throws IOException {
         File statText = new File(PathWebServer+"//"+mainFolder+"//"+CamJobName() + "//"+Cam_All_js);
         
@@ -57,6 +66,10 @@ public class JS_CamAll {
         }
     }
 
+    /**
+     *
+     * @return
+     */
     public static String Echarts_OptionsCamAll_p01() {
         String h1 = "";
         h1 = "\n"
@@ -356,6 +369,10 @@ public class JS_CamAll {
         return h1;
     }
 
+    /**
+     *
+     * @return
+     */
     public static String Echarts_OptionsCamAll_p03() {
         String h1 = "";
         h1 = "]\n};\n"
@@ -404,6 +421,11 @@ public class JS_CamAll {
         return h1;
     }
 
+    /**
+     *
+     * @param t
+     * @return
+     */
     public static String Echarts_OptionsCamAll_p02(Integer t) {
         String h1 = "";
         h1 =  "        {\n"
@@ -487,6 +509,11 @@ public class JS_CamAll {
         return h1;
     }
 
+    /**
+     *
+     * @param t
+     * @return
+     */
     public static String CamsAll_Max_Element(Integer t) {
     String h1="";
     String h2,h3 = "";
@@ -499,6 +526,10 @@ public class JS_CamAll {
     return hall;
     }
     
+    /**
+     *
+     * @return
+     */
     public static String Echarts_FindMAX() {
 
         String h1="",h2="",h3="",h4 = "";
@@ -520,7 +551,10 @@ public class JS_CamAll {
         return h1;
     }
     
-    
+    /**
+     *
+     * @return
+     */
     public static String JS_WonResize() {
         String h1 = "";
         h1 = "\nvar chartArr = [];\n"

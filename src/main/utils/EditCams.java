@@ -42,8 +42,14 @@ import main.info.UserInfo;
  */
 public class EditCams extends javax.swing.JFrame {
 
-
+    /**
+     *
+     */
     public static String comments = "/********************************/\n";
+
+    /**
+     *
+     */
     public static String tempFolderName = "TEMP_";
    
 
@@ -60,11 +66,20 @@ public class EditCams extends javax.swing.JFrame {
         }
     }
 
+    /**
+     *
+     * @return
+     */
     public static String[] DefaultJobEmpty() {
         String[] list = null;
         return list;
     }
 
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
     public static String GetNumberofCams() throws IOException {
         String camsnumber = "";
         camsnumber = FileToString.F2String(PathWebServer + "//" + mainFolder + "//"
@@ -73,6 +88,11 @@ public class EditCams extends javax.swing.JFrame {
         return camsnumber;
     }
     
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
     public static String GetCamJobName() throws IOException {
     
     String h1="";
@@ -81,6 +101,10 @@ public class EditCams extends javax.swing.JFrame {
                 + "//"+CamsDiag_JobName);
     return h1;}
 
+    /**
+     *
+     * @throws IOException
+     */
     public void StartCams() throws IOException {
         jLabel2.setEnabled(false);
         CB01_Job.setEnabled(true);
@@ -105,6 +129,10 @@ public class EditCams extends javax.swing.JFrame {
         textarea.setText("");        
     }
 
+    /**
+     *
+     * @throws IOException
+     */
     public void AfterSelection() throws IOException {
         jLabel2.setEnabled(true);
         CB02_Version.setEnabled(true);
@@ -123,6 +151,9 @@ public class EditCams extends javax.swing.JFrame {
 
     }
 
+    /**
+     *
+     */
     public void SaveButtonColorActive() {
         saveBt.setBackground(Color.green);
         saveBt.setOpaque(true);
@@ -132,6 +163,9 @@ public class EditCams extends javax.swing.JFrame {
 
     }
 
+    /**
+     *
+     */
     public void SaveButtonColorInactive() {
         saveBt.setBackground(Color.red);
         saveBt.setOpaque(true);
@@ -140,7 +174,12 @@ public class EditCams extends javax.swing.JFrame {
         saveBt.setEnabled(false);
     }    
     
-        public static String Create_TempCamJobFolder() throws IOException {
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
+    public static String Create_TempCamJobFolder() throws IOException {
         //String dir = PathWebServer+mainFolder+"\\"+CamJobName();
         String h1 = dirLocation+CB01_Job.getSelectedItem().toString()+"\\"+tempFolderName+CB01_Job.getSelectedItem().toString();
         File file = new File(h1);
@@ -154,7 +193,14 @@ public class EditCams extends javax.swing.JFrame {
         return h1;
     }    
     
-   public static void Create_JS_MainFile() throws FileNotFoundException, IOException, Exception, FileAlreadyExistsException {
+    /**
+     *
+     * @throws FileNotFoundException
+     * @throws IOException
+     * @throws Exception
+     * @throws FileAlreadyExistsException
+     */
+    public static void Create_JS_MainFile() throws FileNotFoundException, IOException, Exception, FileAlreadyExistsException {
        String fileJStemp =  dirLocation + "//" 
                + CB01_Job.getSelectedItem().toString()+"//"
                 + tempFolderName+CB01_Job.getSelectedItem().toString()+"//"
@@ -209,17 +255,30 @@ public class EditCams extends javax.swing.JFrame {
        
     }         
     
+    /**
+     *
+     * @return
+     */
     public static String GetVersionFileJS() {
         String srcJSfile = dirLocation + CB01_Job.getSelectedItem().toString() + "\\" + CB02_Version.getSelectedItem().toString();
         return srcJSfile;
     }
 
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
     public static String GetVersionFileText() throws IOException {
         String h1 = "";
         h1 = FileToString.F2String(GetVersionFileJS());
         return h1;
     }
     
+    /**
+     *
+     * @throws IOException
+     */
     public void CheckCamsFromUSer() throws IOException {
         int k = Integer.parseInt(GetNumberofCams());
         int t = camslider.getValue();
@@ -240,6 +299,11 @@ public class EditCams extends javax.swing.JFrame {
         }
     }
 
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
     public static String[] ReadCamsJobsUserBackUp() throws IOException {
 
         String[] list = null;
@@ -265,6 +329,11 @@ public class EditCams extends javax.swing.JFrame {
         return list;
     }
 
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
     public static String[] ReadCamsJobsUserBackUp_AfterSelection() throws IOException {
 
         String h1 = "";
@@ -292,6 +361,11 @@ public class EditCams extends javax.swing.JFrame {
         return list;
     }
 
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
     public static String[] ReadCamsJobsNgix() throws IOException {
 
         String[] list = null;
@@ -317,6 +391,11 @@ public class EditCams extends javax.swing.JFrame {
         return list;
     }
 
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
     public static HashSet<String> CompareFolders() throws IOException {
         String[] listSrc = null;
         String[] listTrg = null;
@@ -338,6 +417,11 @@ public class EditCams extends javax.swing.JFrame {
 
     }
 
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
     public static String[] FinalFolders() throws IOException {
         String[] arr = null;
         arr = CompareFolders().toArray(new String[0]);
@@ -779,6 +863,11 @@ public class EditCams extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_saveBtActionPerformed
 
+    /**
+     *
+     * @throws IOException
+     * @throws Exception
+     */
     public void CheckAndRemoveLines() throws IOException, Exception {
         String jsFile = dirLocation + "\\"
                 + CB01_Job.getSelectedItem().toString() + "\\"
@@ -904,7 +993,12 @@ public class EditCams extends javax.swing.JFrame {
         //DeleteLinesFromTXT(jsFile, 3, 6);
     }
     
-        public static String SED_RemoveLastLinesFromText() throws IOException {
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
+    public static String SED_RemoveLastLinesFromText() throws IOException {
         String h1 = "";
         int NumCamsConst=4;
         int CurrentCams = camslider.getValue();
@@ -959,6 +1053,12 @@ public class EditCams extends javax.swing.JFrame {
         });
     }
 
+    /**
+     *
+     * @param filename
+     * @param startline
+     * @param numlines
+     */
     public void DeleteLinesFromTXT(String filename, int startline, int numlines) {
         try {
             BufferedReader br = new BufferedReader(new FileReader(filename));
@@ -991,6 +1091,11 @@ public class EditCams extends javax.swing.JFrame {
         }
     }
 
+    /**
+     *
+     * @param file
+     * @throws Exception
+     */
     public void ReadLastLinesFromFile(File file) throws Exception {
         //int lines = GetNumberofLinesFromVersionFile();
         int lines = 10;
@@ -1023,6 +1128,12 @@ public class EditCams extends javax.swing.JFrame {
 
     }    
     
+    /**
+     *
+     * @param aFile
+     * @return
+     * @throws IOException
+     */
     public static int countLines(File aFile) throws IOException {
         LineNumberReader reader = null;
         try {
@@ -1038,6 +1149,11 @@ public class EditCams extends javax.swing.JFrame {
         }
     }
     
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
     public static int GetNumberofLinesFromVersionFile() throws IOException {
         int k = 1;
         

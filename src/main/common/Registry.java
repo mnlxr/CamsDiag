@@ -12,15 +12,24 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import main.tests.Main;
 
+
 /**
  *
  * @author MManolas
  */
 public class Registry {
 
+    /**
+     *
+     */
     public static String regpath = "HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\BIC_Violex\\PTC_config";
     
-        public static String GetUserRegDisplayName() throws IOException {
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
+    public static String GetUserRegDisplayName() throws IOException {
 
         String value = null;
         try {
@@ -32,8 +41,15 @@ public class Registry {
 
     } 
     
-    
-     public static String Get_ValueFromRegistry(String keyPath, String keyName)
+    /**
+     *
+     * @param keyPath
+     * @param keyName
+     * @return
+     * @throws IOException
+     * @throws InterruptedException
+     */
+    public static String Get_ValueFromRegistry(String keyPath, String keyName)
             throws IOException, InterruptedException {
         Process keyReader = Runtime.getRuntime().exec(
                 "reg query \"" + keyPath + "\" /v \"" + keyName + "\"");

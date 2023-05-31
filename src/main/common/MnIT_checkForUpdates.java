@@ -18,6 +18,9 @@ import main.MnIT_Main;
  */
 public class MnIT_checkForUpdates {
     
+    /**
+     *
+     */
     public static void CheckForUpdates(){
 String cmdjar="java -jar";
         String updatejar="C:\\Data\\CamsDiag\\MnIT_CamsDiag_Update.jar";

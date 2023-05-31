@@ -13,7 +13,10 @@ import main.info.UserInfo;
  */
 public class Status extends javax.swing.JFrame {
 
-        public static final int RET_CANCEL = 0;
+    /**
+     *
+     */
+    public static final int RET_CANCEL = 0;
     /** A return status code - returned if OK button has been pressed */
     public static final int RET_OK = 1;
     private int returnStatus = RET_CANCEL;
@@ -24,7 +27,11 @@ public class Status extends javax.swing.JFrame {
         initComponents();
     }
 
-        public int getReturnStatus() {
+    /**
+     *
+     * @return
+     */
+    public int getReturnStatus() {
         return returnStatus;
     }
     

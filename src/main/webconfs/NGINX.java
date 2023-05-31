@@ -16,12 +16,19 @@ import main.common.MainVars;
  */
 public class NGINX {
     
-        public static void main(String args[]) throws Exception {
+    /**
+     *
+     * @param args
+     * @throws Exception
+     */
+    public static void main(String args[]) throws Exception {
 StartNGINX_CMD();
 System.exit(0);
     }
     
-
+    /**
+     *
+     */
     public static void StartNGINX_CMD() {
         ProcessBuilder processBuilder = new ProcessBuilder();
         // Windows
@@ -52,6 +59,9 @@ System.exit(0);
         }        
     }
     
+    /**
+     *
+     */
     public static void StopNGINX_CMD() {
         ProcessBuilder processBuilder = new ProcessBuilder();
         // Windows
@@ -85,6 +95,9 @@ System.exit(0);
         }        
     }    
     
+    /**
+     *
+     */
     public static void RestartNGINX_CMD() {
         ProcessBuilder processBuilder = new ProcessBuilder();
         // Windows

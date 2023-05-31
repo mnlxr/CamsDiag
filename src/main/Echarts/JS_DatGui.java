@@ -26,13 +26,20 @@ import main.info.UserInfo;
  */
 public class JS_DatGui {
     
-    
-        public static void main(String args[]) throws Exception {
+    /**
+     *
+     * @param args
+     * @throws Exception
+     */
+    public static void main(String args[]) throws Exception {
         DatGUI();
     }
     
-    
-        public static void DatGUI() throws IOException {
+    /**
+     *
+     * @throws IOException
+     */
+    public static void DatGUI() throws IOException {
         File statText = new File(PathWebServer+"//"+mainFolder+"//"+CamJobName() + "//"+Cam_DatGui_js);
         
         FileOutputStream is = new FileOutputStream(statText);
@@ -52,7 +59,11 @@ int i = 0;
         }
     }
         
-            public static String DatGui_01() {
+    /**
+     *
+     * @return
+     */
+    public static String DatGui_01() {
         String h1 = "";
         
                 StringBuilder builder2 = new StringBuilder();

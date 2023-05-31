@@ -33,13 +33,19 @@ import static main.pros.EchartsProperties.ReadProp_EchartsTheme;
  */
 public class JS_CommonApp {
 
-
-   
-    
-        public static void main(String args[]) throws Exception {
+    /**
+     *
+     * @param args
+     * @throws Exception
+     */
+    public static void main(String args[]) throws Exception {
         CommonVars();
     }
     
+    /**
+     *
+     * @throws IOException
+     */
     public static void CommonVars() throws IOException {
 
         File statText = new File(PathWebServer+"//"+mainFolder+"//"+CamJobName() + "//"+CamsDiag_Common_js);
@@ -52,6 +58,10 @@ public class JS_CommonApp {
         }
     }
     
+    /**
+     *
+     * @return
+     */
     public static String JS_GetCurrentDate() {
         String h1 = "";
         h1 = "var today = new Date();\n"
@@ -65,6 +75,11 @@ public class JS_CommonApp {
         return h1;
     }
     
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
     public static String JS_CommonVars() throws IOException {
     String h1="";
         h1 = "var showLabels = " + ReadProp_EchartsLabels() + ";\n"
@@ -101,6 +116,10 @@ public class JS_CommonApp {
     return h1;
     }    
     
+    /**
+     *
+     * @return
+     */
     public static String JS_GetTime() {
         String h1 = "";
         h1 = "function formatAMPM(date) {\n"
@@ -117,6 +136,10 @@ public class JS_CommonApp {
         return h1;
     }
     
+    /**
+     *
+     * @return
+     */
     public static String CheckBoxLabels() {
         String h1 = "";
         h1 = "\n\nfunction ShowLabelsFunction() {\n"
@@ -133,7 +156,11 @@ public class JS_CommonApp {
         return h1;
     }
     
-    
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
     public static String JS_htmlRenderJSpdf() throws IOException {
     String h1 = "";
     
@@ -266,6 +293,11 @@ StringBuilder builder1 = new StringBuilder();
     
     }
     
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
     public static String JS_HTML_Render() throws IOException {
         String h1 = "";
 

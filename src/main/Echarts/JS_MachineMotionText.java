@@ -15,7 +15,11 @@ import static main.MnIT_Main.machineMotionCB;
  */
 public class JS_MachineMotionText {
     
-    
+    /**
+     *
+     * @param t
+     * @return
+     */
     public static String MachineMotionOptionCam01(Integer t) {
         String h1 = "";
         h1 = "markArea: {\n"
@@ -74,7 +78,12 @@ public class JS_MachineMotionText {
     
     return h1;}
     
-public static String MachineMotionOptionCam02(Integer t) {
+    /**
+     *
+     * @param t
+     * @return
+     */
+    public static String MachineMotionOptionCam02(Integer t) {
         String h1 = "";
         h1 = "markArea: {\n"
                 + "z:0,\n"
@@ -137,7 +146,10 @@ public static String MachineMotionOptionCam02(Integer t) {
     
     return h1;}    
     
-    
+    /**
+     *
+     * @return
+     */
     public static String MachineCamAll(){
     String h1="";
         h1 = h1 = "markArea: {\n"
@@ -192,7 +204,10 @@ public static String MachineMotionOptionCam02(Integer t) {
     return h1;
     }
     
-    
+    /**
+     *
+     * @return
+     */
     public static String MachineMotionArray() {
         String h1 = "";
         h1 = "//var lenMotion = MachineMotionArray.length;\n"
@@ -204,6 +219,10 @@ public static String MachineMotionOptionCam02(Integer t) {
         return h1;
     }
     
+    /**
+     *
+     * @return
+     */
     public static String MachineMotionArrayUser() {
         String h1 = "";
         h1 = "var MachineMotionArray = [0,90,180,360];\n"
@@ -211,6 +230,10 @@ public static String MachineMotionOptionCam02(Integer t) {
         return h1;
     }
     
+    /**
+     *
+     * @return
+     */
     public static String MachineMotionArrayUser02() {
         String h1 = "";
         h1 = "var MachineMotionArray = [90,180];\n"
@@ -218,6 +241,10 @@ public static String MachineMotionOptionCam02(Integer t) {
         return h1;
     }    
     
+    /**
+     *
+     * @return
+     */
     public static String CheckMachineMotionCam_Slice_Array() {
         String h1 = JS_Motion_SliceFunctionArray();
         String h2 = JS_Dwell_SliceFunctionArray();
@@ -245,7 +272,11 @@ public static String MachineMotionOptionCam02(Integer t) {
         return j1;
     }    
     
-    
+    /**
+     *
+     * @param t
+     * @return
+     */
     public static String Check_CBox_MarkArea_Option(Integer t) {
     String h1="";
         if (MnIT_Main.CB_motion.getSelectedIndex() == 0) {
@@ -256,6 +287,10 @@ public static String MachineMotionOptionCam02(Integer t) {
     return h1;
     }
     
+    /**
+     *
+     * @return
+     */
     public static String Check_CBox_Vars_Option() {
     String h1="";
         if (MnIT_Main.CB_motion.getSelectedIndex() == 0) {
@@ -266,9 +301,10 @@ public static String MachineMotionOptionCam02(Integer t) {
     return h1;
     }    
     
-    
-    
-    
+    /**
+     *
+     * @return
+     */
     public static String JS_Motion_SliceFunctionArray() {
         String h1 = "";
         h1 = "function sliceIntoChunks(arr, chunkSize) {\n"
@@ -287,6 +323,10 @@ public static String MachineMotionOptionCam02(Integer t) {
         return h1;    
     }
     
+    /**
+     *
+     * @return
+     */
     public static String JS_Dwell_SliceFunctionArray() {
         String h1 = "";
         h1 = ""
@@ -308,6 +348,10 @@ public static String MachineMotionOptionCam02(Integer t) {
         return h1;    
     }    
    
+    /**
+     *
+     * @return
+     */
     public static String JS_MotionDwellLength() {
     String h1="";
     h1 = ""
@@ -324,7 +368,10 @@ public static String MachineMotionOptionCam02(Integer t) {
     return h1;
     }
     
-    
+    /**
+     *
+     * @return
+     */
     public static String JS_Populate() {
         String h1 = "";
         h1 = "\n\n"
@@ -350,6 +397,10 @@ public static String MachineMotionOptionCam02(Integer t) {
         return h1;
     }
     
+    /**
+     *
+     * @return
+     */
     public static String JS_MarkArea_Motion() {
         String h1 = "";
         h1 = "\n\n\n"
@@ -368,6 +419,10 @@ public static String MachineMotionOptionCam02(Integer t) {
         return h1;
     }
     
+    /**
+     *
+     * @return
+     */
     public static String JS_MarkArea_p001_Motion() {
         String h1 = "";
         h1 = "var motionText01 = \n\"\n"
@@ -388,6 +443,10 @@ public static String MachineMotionOptionCam02(Integer t) {
         return h1;
     }
     
+    /**
+     *
+     * @return
+     */
     public static String JS_MarkArea_p001_Dwell() {
         String h1 = "";
         h1 = ""
@@ -407,6 +466,10 @@ public static String MachineMotionOptionCam02(Integer t) {
         return h1;
     }
     
+    /**
+     *
+     * @return
+     */
     public static String JS_IterateMotionDwell() {
         String h1 = "";
         h1 = //"let studentsData = [['Jack', 24], ['Sara', 23],];\n"
@@ -425,7 +488,11 @@ public static String MachineMotionOptionCam02(Integer t) {
         return h1;
     }
     
-    
+    /**
+     *
+     * @param t
+     * @return
+     */
     public static String JS_MotionShaDiamEqualtoZero(Integer t){
     
         String h1 = "";

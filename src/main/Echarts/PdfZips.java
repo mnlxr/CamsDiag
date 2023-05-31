@@ -14,7 +14,7 @@ import static main.CamReqs.MainInfo.CamJobName;
 import static main.common.Folders.PathWebServer;
 import static main.common.Folders.ZipuserPath;
 import static main.common.Folders.mainFolder;
-import static main.tests.Zip.zipFolder;
+import static main.utils.Zip.zipFolder;
 
 /**
  *
@@ -22,10 +22,17 @@ import static main.tests.Zip.zipFolder;
  */
 public class PdfZips {
  
+    /**
+     *
+     */
     public static String filename = PathWebServer+"//"+mainFolder+"//";
             //CamReqs.MainInfo.CamJobName()+"_"+ZipDate()+".zip";
     
-    
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
     public static String PythonPdfZipName() throws IOException {
         String h1 = "";
 
@@ -34,7 +41,11 @@ public class PdfZips {
         return h1;
     }
     
-    
+    /**
+     *
+     * @throws IOException
+     * @throws Exception
+     */
     public static void CreateZipPdf() throws IOException, Exception {
         String zipFile = PythonPdfZipName();
          

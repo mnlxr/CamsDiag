@@ -3,6 +3,10 @@ package main.utils;
 import javax.swing.*;
 import java.awt.*;
 
+/**
+ *
+ * @author MManolas
+ */
 public class SplashScreenDemo {
     JFrame frame;
     JLabel image=new JLabel(new javax.swing.ImageIcon(getClass().getResource("/main/images/camsdiag01.png")));
@@ -20,6 +24,10 @@ public class SplashScreenDemo {
         addMessage();
         runningPBar();
     }
+
+    /**
+     *
+     */
     public void createGUI(){
         frame=new JFrame();
         frame.getContentPane().setLayout(null);
@@ -30,12 +38,20 @@ public class SplashScreenDemo {
         frame.setVisible(true);
 
     }
+
+    /**
+     *
+     */
     public void addImage(){
         image.setSize(600,225);
         //image.setSize(225,225);
         //600,200
         frame.add(image);
     }
+
+    /**
+     *
+     */
     public void addText()
     {
         text.setFont(new Font("arial",Font.BOLD,20));
@@ -43,6 +59,10 @@ public class SplashScreenDemo {
         text.setForeground(Color.BLUE);
         frame.add(text);
     }
+
+    /**
+     *
+     */
     public void addMessage()
     {
         message.setBounds(250,320,200,40);
@@ -50,6 +70,10 @@ public class SplashScreenDemo {
         message.setFont(new Font("arial",Font.BOLD,11));
         frame.add(message);
     }
+
+    /**
+     *
+     */
     public void addProgressBar(){
         progressBar.setBounds(100,280,400,30);
         progressBar.setBorderPainted(true);
@@ -59,6 +83,10 @@ public class SplashScreenDemo {
         progressBar.setValue(0);
         frame.add(progressBar);
     }
+
+    /**
+     *
+     */
     public void runningPBar(){
         int i=0;
 

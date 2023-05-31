@@ -20,6 +20,11 @@ import javax.imageio.ImageIO;
  */
 public class AsciiARTs {
   
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
     public static String ASCII_ART_CamsCharts() throws IOException {
         String h1 = "";
         int width = 211;
@@ -59,6 +64,10 @@ public class AsciiARTs {
         return h2;
     }
     
+    /**
+     *
+     * @return
+     */
     public static String ASCII_Art01() {
         String h1 = "";
         h1 =      "********************\n"

@@ -25,7 +25,9 @@ public class AboutBC_Cams extends javax.swing.JDialog implements ActionListener,
     /** A return status code - returned if OK button has been pressed */
     public static final int RET_OK = 1;
 
-    /** Creates new form LsrAbout */
+    /** Creates new form LsrAbout
+     * @param parent
+     * @param modal */
     public AboutBC_Cams(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();

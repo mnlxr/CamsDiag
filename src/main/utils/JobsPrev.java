@@ -21,6 +21,8 @@ public class JobsPrev extends javax.swing.JDialog {
     public static final int RET_OK = 1;
     /**
      * Creates new form JobsPrev
+     * @param parent
+     * @param modal
      */
     public JobsPrev(java.awt.Frame parent, boolean modal) {
         super(parent, modal);

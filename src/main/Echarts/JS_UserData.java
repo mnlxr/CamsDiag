@@ -27,10 +27,21 @@ import static main.common.Folders.mainFolder;
  */
 public class JS_UserData {
     
-        public static void main(String args[]) throws Exception {
+    /**
+     *
+     * @param args
+     * @throws Exception
+     */
+    public static void main(String args[]) throws Exception {
         JS_UserDataFile();
     }
     
+    /**
+     *
+     * @throws FileNotFoundException
+     * @throws IOException
+     * @throws Exception
+     */
     public static void JS_UserDataFile() throws FileNotFoundException, IOException, Exception {
         File statText = new File(PathWebServer+"//"+mainFolder+"//"+
                 CamJobName() + "//" + CamJobName() + ".js");
@@ -76,7 +87,10 @@ public class JS_UserData {
         }
     }
 
-    
+    /**
+     *
+     * @return
+     */
     public static String labelCharts(){
     
         String h1 = "";
@@ -86,6 +100,10 @@ public class JS_UserData {
         return h1;
     }
 
+    /**
+     *
+     * @return
+     */
     public static String CamY_Values() {
         String h1 = "", h2 = "", h3="";
         h2 = "[45, 45, 60.5, 60.5, 45, 45]";
@@ -98,6 +116,10 @@ public class JS_UserData {
         return h1;
     }
 
+    /**
+     *
+     * @return
+     */
     public static String CamX_Values() {
         String h1 = "";
         String h2 = "[0, 90, 160, 240, 310, 360]";
@@ -110,7 +132,10 @@ public class JS_UserData {
         return h1;
     }
     
-    
+    /**
+     *
+     * @return
+     */
     public static String ShaftDiam() {
         String[] harray = {"16", "30", "28.575", "40"};
         Random r = new Random();

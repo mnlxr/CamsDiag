@@ -27,10 +27,18 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JTextArea;
 
+/**
+ *
+ * @author MManolas
+ */
 public class Main extends JFrame implements DropTargetListener {
   DropTarget dt;
   JTextArea ta = new JTextArea();
-  public Main() {
+
+    /**
+     *
+     */
+    public Main() {
     super("Drop Test");
     setSize(300, 300);
     getContentPane()
@@ -42,23 +50,43 @@ public class Main extends JFrame implements DropTargetListener {
     setVisible(true);
   }
 
-  public void dragEnter(DropTargetDragEvent dtde) {
+    /**
+     *
+     * @param dtde
+     */
+    public void dragEnter(DropTargetDragEvent dtde) {
     System.out.println("Drag Enter");
   }
 
-  public void dragExit(DropTargetEvent dte) {
+    /**
+     *
+     * @param dte
+     */
+    public void dragExit(DropTargetEvent dte) {
     System.out.println("Drag Exit");
   }
 
-  public void dragOver(DropTargetDragEvent dtde) {
+    /**
+     *
+     * @param dtde
+     */
+    public void dragOver(DropTargetDragEvent dtde) {
     System.out.println("Drag Over");
   }
 
-  public void dropActionChanged(DropTargetDragEvent dtde) {
+    /**
+     *
+     * @param dtde
+     */
+    public void dropActionChanged(DropTargetDragEvent dtde) {
     System.out.println("Drop Action Changed");
   }
 
-  public void drop(DropTargetDropEvent dtde) {
+    /**
+     *
+     * @param dtde
+     */
+    public void drop(DropTargetDropEvent dtde) {
     try {
       Transferable tr = dtde.getTransferable();
       DataFlavor[] flavors = tr.getTransferDataFlavors();
@@ -91,7 +119,12 @@ public class Main extends JFrame implements DropTargetListener {
       dtde.rejectDrop();
     }
   }
-  public static void main(String args[]) {
+
+    /**
+     *
+     * @param args
+     */
+    public static void main(String args[]) {
     new Main();
   }
 }

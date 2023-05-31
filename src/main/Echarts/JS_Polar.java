@@ -24,13 +24,20 @@ import static main.common.MainVars.Cam_Polar_js;
  */
 public class JS_Polar {
     
-    
-        public static void main(String args[]) throws Exception {
+    /**
+     *
+     * @param args
+     * @throws Exception
+     */
+    public static void main(String args[]) throws Exception {
         Polar_Rth();
     }
     
-    
-        public static void Polar_Rth() throws IOException {
+    /**
+     *
+     * @throws IOException
+     */
+    public static void Polar_Rth() throws IOException {
         File statText = new File(PathWebServer+"//"+mainFolder+"//"+CamJobName() + "//"+Cam_Polar_js);
         
         FileOutputStream is = new FileOutputStream(statText);
@@ -47,7 +54,11 @@ public class JS_Polar {
         }
     }
         
-            public static String PolarCoordinates() {
+    /**
+     *
+     * @return
+     */
+    public static String PolarCoordinates() {
         String h1 = "";
         String r = "";
         String th="";

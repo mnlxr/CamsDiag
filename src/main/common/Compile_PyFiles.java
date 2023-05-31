@@ -21,6 +21,12 @@ import static main.pros.SystemProps.CamsDiag_MainPath;
 public class Compile_PyFiles {
    
    //public static String ph1 = CamsDiag_MainPath();//"C:\\Users\\mmanolas\\Documents\\NetBeansProjects\\MnIT_CamsDiag\\";
+
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
    
    
     public static String CompilePyF01() throws IOException {
@@ -49,6 +55,11 @@ public class Compile_PyFiles {
         return h1;
     }
     
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
     public static String CompilePyF02() throws IOException {
         String h1 = "";
         String ph1 = CamsDiag_MainPath();
@@ -65,8 +76,12 @@ public class Compile_PyFiles {
         return h1;
     }
 
-    
-        public static String RemoveLeadingSpaces() throws IOException {
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
+    public static String RemoveLeadingSpaces() throws IOException {
         String h1 = "";
         String ph1 = CamsDiag_MainPath();
 //        h1 = "cmd /c "
@@ -80,7 +95,12 @@ public class Compile_PyFiles {
         return h1;
     }
         
-        public static String DeleteSEDfiles() throws IOException {
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
+    public static String DeleteSEDfiles() throws IOException {
         String h1 = "";
         h1 = "cmd /c del sed*";
         return h1;

@@ -28,7 +28,12 @@ import static main.common.MainVars.CamsDiag_NofCams;
  */
 public class Create_TXTs {
     
-        public static void main(String args[]) throws Exception {
+    /**
+     *
+     * @param args
+     * @throws Exception
+     */
+    public static void main(String args[]) throws Exception {
 CamsDiag_Create_CamJobNameTXT();
 CamsDiag_Create_CamJobNameTXT_General();
 CamsDiag_Create_NofCamsTXT();
@@ -36,7 +41,12 @@ CamsDiag_Create_NofCamsTXT_General();
 
     }
     
-
+    /**
+     *
+     * @throws FileNotFoundException
+     * @throws IOException
+     * @throws Exception
+     */
     public static void CamsDiag_Create_NofCamsTXT() throws FileNotFoundException, IOException, Exception {
         File statText = new File(PathWebServer+"\\"+mainFolder+"\\"+
                 CamJobName() + "\\"+CamsDiag_NofCams);
@@ -53,7 +63,12 @@ CamsDiag_Create_NofCamsTXT_General();
         }
     }
 
-    
+    /**
+     *
+     * @throws FileNotFoundException
+     * @throws IOException
+     * @throws Exception
+     */
     public static void CamsDiag_Create_NofCamsTXT_General() throws FileNotFoundException, IOException, Exception {
         File statText = new File(
                 PathWebServer+"\\"+
@@ -71,7 +86,12 @@ CamsDiag_Create_NofCamsTXT_General();
         }
     }    
     
-    
+    /**
+     *
+     * @throws FileNotFoundException
+     * @throws IOException
+     * @throws Exception
+     */
     public static void CamsDiag_Create_DescriptionTXT() throws FileNotFoundException, IOException, Exception {
         File statText = new File(PathWebServer+"\\"+mainFolder+"\\"+
                 CamJobName() + "\\"+CamsDiag_Desc);
@@ -88,7 +108,12 @@ CamsDiag_Create_NofCamsTXT_General();
         }
     }    
     
-    
+    /**
+     *
+     * @throws FileNotFoundException
+     * @throws IOException
+     * @throws Exception
+     */
     public static void CamsDiag_Create_DescriptionTXT_General() throws FileNotFoundException, IOException, Exception {
         File statText = new File(PathWebServer+"\\"+mainFolder+"\\"+
                 CamsDiag_Desc);
@@ -105,6 +130,12 @@ CamsDiag_Create_NofCamsTXT_General();
         }
     }    
     
+    /**
+     *
+     * @throws FileNotFoundException
+     * @throws IOException
+     * @throws Exception
+     */
     public static void CamsDiag_Create_CamJobNameTXT() throws FileNotFoundException, IOException, Exception {
         File statText = new File(
                 PathWebServer+"\\"+
@@ -121,6 +152,12 @@ CamsDiag_Create_NofCamsTXT_General();
         }
     }
 
+    /**
+     *
+     * @throws FileNotFoundException
+     * @throws IOException
+     * @throws Exception
+     */
     public static void CamsDiag_Create_CamJobNameTXT_General() throws FileNotFoundException, IOException, Exception {
         File statText = new File(PathWebServer+"\\"+
                 mainFolder+"\\"+CamsDiag_JobName);

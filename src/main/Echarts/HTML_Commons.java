@@ -16,6 +16,11 @@ import main.info.UserInfo;
  */
 public class HTML_Commons {
 
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
     public static String HTML_Head_MetaData() throws IOException {
         String h1 = "";
         h1 = "\n"
@@ -37,6 +42,10 @@ public class HTML_Commons {
         return h1;
     }
 
+    /**
+     *
+     * @return
+     */
     public static String HTML_footer() {
         String h1 = "";
         h1 = ""
@@ -49,12 +58,20 @@ public class HTML_Commons {
         return h1;
     }
     
+    /**
+     *
+     * @return
+     */
     public static String CopyRightText() {
     String h1="";
     h1="All rights reserved by Bic Group S.A., including cases of proprietary applications. We retain sole power of disposal including all righty relating to copying and distribution.";
     return h1;
     }
     
+    /**
+     *
+     * @return
+     */
     public static String HTML_footer2() {
         String h1 = "";
         h1 = "\n<footer  id=\"footer\">\n"

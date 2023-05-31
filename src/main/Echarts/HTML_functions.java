@@ -40,10 +40,21 @@ import main.info.UserInfo;
  */
 public class HTML_functions {
     
+    /**
+     *
+     * @param args
+     * @throws Exception
+     */
     public static void main(String args[]) throws Exception {
         CamsDiag_index_HTML();
     }
     
+    /**
+     *
+     * @throws FileNotFoundException
+     * @throws IOException
+     * @throws Exception
+     */
     public static void CamsDiag_index_HTML() throws FileNotFoundException, IOException, Exception {
         File statText = new File(PathWebServer+"\\"+mainFolder+"\\"+CamJobName() + ".html");
         FileOutputStream is = new FileOutputStream(statText);
@@ -56,16 +67,21 @@ public class HTML_functions {
         }
     }   
     
+    /**
+     *
+     * @return
+     */
     public static String Echarts_Dimensions() {
         String h1 = "";
         h1 = "style=\"width: 90%; min-height: 450pt; height:450pt; display: inline-block;\"";
         return h1;
     }
     
-
-    
-
-    
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
     public static String HTML_scripts_ReadFilesTXT() throws IOException {
         String h1 = "";
         h1 = "\n<script>\n"
@@ -105,6 +121,10 @@ public class HTML_functions {
         return h1;
     }
 
+    /**
+     *
+     * @return
+     */
     public static String HTML_LibImports_External() {
         String h1 = "";
         h1 = "\n"
@@ -137,6 +157,11 @@ public class HTML_functions {
         return h1;
     } 
     
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
     public static String HTML_LibImports_Internal() throws IOException {
         String h1 = "";
         h1 = "\n<script src=\""+LibPath_HTML_Windir()+"/echarts/echarts.js\"></script>\n\n"
@@ -193,6 +218,11 @@ public class HTML_functions {
         return h1;
     }  
     
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
     public static String HTML_CamsJS_Import() throws IOException {
         String h1 = "";
         h1 = "<!-- Cams JS Import -->\n"
@@ -215,6 +245,11 @@ public class HTML_functions {
         return h1;
     }
 
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
     public static String HTML_JSlibsBODY_Import() throws IOException {
         String h1 = "";
         h1 = "<!-- Libs Import -->\n"
@@ -224,7 +259,10 @@ public class HTML_functions {
         return h1;
     }   
     
-    
+    /**
+     *
+     * @return
+     */
     public static String HTML_CamAll_Visibility() {
         String h1 = "";
         if (NumberOfCams() == 1) {
@@ -237,6 +275,12 @@ public class HTML_functions {
         return h1;
     }  
     
+    /**
+     *
+     * @return
+     * @throws IOException
+     * @throws URISyntaxException
+     */
     public static String HTML_Buttons() throws IOException, URISyntaxException {
         String h1 = "";
         String buttonWidth="15";
@@ -368,6 +412,10 @@ public class HTML_functions {
         return h1;
     }
      
+    /**
+     *
+     * @return
+     */
     public static String HTML_CamsMainDIV() {
         String h1 = "";
         StringBuilder builder = new StringBuilder();
@@ -385,6 +433,10 @@ public class HTML_functions {
         return h1;
     }
     
+    /**
+     *
+     * @return
+     */
     public static String HTML_CamsImagesDIV() {
         String h1="";
         String h2 = "<div id = \"print\">\n";
@@ -402,6 +454,11 @@ public class HTML_functions {
         return h4;
     }    
     
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
     public static String HTML_CamsMainImportJS_Files() throws IOException {
         String h1 = "";
         StringBuilder builder = new StringBuilder();
@@ -413,6 +470,10 @@ public class HTML_functions {
         return h1;
     }    
     
+    /**
+     *
+     * @return
+     */
     public static String HTML_CSS() {
         String h1 = "";
         h1 = "\n<link rel=\"stylesheet\" href=\""+LibPath_HTML_Windir()+"/css/mnit.css\">\n"
@@ -425,6 +486,11 @@ public class HTML_functions {
         return h1;
     }
     
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
     public static String HTML_Head() throws IOException {
         String h1 = "";
         h1 = "<!DOCTYPE html>\n"
@@ -444,6 +510,12 @@ public class HTML_functions {
         return h1;
     }
         
+    /**
+     *
+     * @return
+     * @throws IOException
+     * @throws URISyntaxException
+     */
     public static String HTML_Body() throws IOException, URISyntaxException {
         String h1 = "";
         h1 = "\n"
@@ -574,7 +646,10 @@ public class HTML_functions {
         return h1;
     }   
     
-    
+    /**
+     *
+     * @return
+     */
     public static String HTML_CanvasID() {
     String h1="";
     

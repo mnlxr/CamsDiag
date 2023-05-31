@@ -30,6 +30,9 @@ import main.info.UserInfo;
  */
 public class Folders {
   
+    /**
+     *
+     */
     public static String WindowsPathAbs="C:\\Users\\mmanolas\\Documents\\NetBeansProjects\\MnIT_CamsDiag\\";
     
     
@@ -38,20 +41,47 @@ public class Folders {
     
     //public static String PathWebServer = Check_PathWebServer();
 
+    /**
+     *
+     */
+
     public static String mainFolder = UserInfo.Get_UserName().toLowerCase() + "_CamsCharts";
+
+    /**
+     *
+     */
     public static String ZipuserPath = UserInfo.Get_UserName().toLowerCase() + "_CamsCharts";
 //    public static String webLibsApache = "httpd\\Apache2\\htdocs\\MnIT_libs";
 //    public static String webLibsNginx = "nginx\\html\\MnIT_libs";
     
-    
-    
+    /**
+     *
+     */
     public static String webLibsApache = "httpd\\Apache2\\htdocs\\MnIT_libs\\";
+
+    /**
+     *
+     */
     public static String webLibsNginx = "nginx\\html\\MnIT_libs";
     
+    /**
+     *
+     */
     public static String PathWebServerApache = "httpd\\Apache2\\htdocs\\";
+
+    /**
+     *
+     */
     public static String PathWebServerNginx = "nginx\\html\\";
     
+    /**
+     *
+     */
     public static String PathWebServer = Check_PathWebServer();
+
+    /**
+     *
+     */
     public static String webLibs = Check_WebLibs();
     
 
@@ -61,14 +91,29 @@ public class Folders {
     //%sedpath% -i "s/^[ \t]*//;s/[ \t]*$//" "%tempf%"
     
     //public static String webLibs = Check_WebLibs();
+
+    /**
+     *
+     */
     
     public static String portApache = "8198";
+
+    /**
+     *
+     */
     public static String portNginx = "8158";
 
-  public static String userbackup="UserBackUp";
+    /**
+     *
+     */
+    public static String userbackup="UserBackUp";
     
-    
-            public static void main(String args[]) throws Exception {
+    /**
+     *
+     * @param args
+     * @throws Exception
+     */
+    public static void main(String args[]) throws Exception {
 Create_CamJobFolder();
 Create_Camsolder();
 Create_Python_CamJobFolder();
@@ -78,14 +123,23 @@ CopyImagesForReport();
 
     }
     
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
     public static String MainLinkWEB() throws IOException {
         String mainlink = "";
         mainlink = WebServerPath();
         return mainlink;
     }
             
-            
-        public static String Create_CamJobFolder() throws IOException {
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
+    public static String Create_CamJobFolder() throws IOException {
         String dir = PathWebServer+mainFolder+"\\"+CamJobName();
 
         File file = new File(dir);
@@ -99,7 +153,12 @@ CopyImagesForReport();
         return dir;
     }
         
-        public static String Create_Camsolder() throws IOException {
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
+    public static String Create_Camsolder() throws IOException {
         String dir = PathWebServer+mainFolder+"\\"+CamJobName()+"\\cams";
 
         File file = new File(dir);
@@ -113,7 +172,12 @@ CopyImagesForReport();
         return dir;
     }
 
-        public static String Create_PRODCamsJobFolder() throws IOException {
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
+    public static String Create_PRODCamsJobFolder() throws IOException {
         String dir = aniscamsdiag01_Upload+"\\"+CamJobName()+"\\cams";
 
         File file = new File(dir);
@@ -127,8 +191,12 @@ CopyImagesForReport();
         return dir;
     }        
         
-        
-        public static String Create_Python_CamJobFolder() throws IOException {
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
+    public static String Create_Python_CamJobFolder() throws IOException {
         String dir = PathWebServer+mainFolder+"\\"+CamJobName()+"\\"+PythonFolderMainName();
 
         File file = new File(dir);
@@ -142,7 +210,12 @@ CopyImagesForReport();
         return dir;
     } 
         
-        public static String Create_Python_CamParameters() throws IOException {
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
+    public static String Create_Python_CamParameters() throws IOException {
         String dir = PathWebServer+mainFolder+"\\"+CamJobName()+"\\"+PythonFolderMainName()+"\\"+PythonFolderParametersName();
 
         File file = new File(dir);
@@ -156,7 +229,12 @@ CopyImagesForReport();
         return dir;
     }    
         
-        public static String Create_Python_CamParametersArbortext() throws IOException {
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
+    public static String Create_Python_CamParametersArbortext() throws IOException {
         String dir = PathWebServer+mainFolder+"\\"+CamJobName()+"\\"+PythonFolderMainName()+"\\"+PythonFolderParametersName_Arbortext();
 
         File file = new File(dir);
@@ -170,39 +248,62 @@ CopyImagesForReport();
         return dir;
     }        
         
-        public static String PythonFolderMainName() {
+    /**
+     *
+     * @return
+     */
+    public static String PythonFolderMainName() {
         String h1="";
         h1="python".toLowerCase();
         return h1;
         }
         
-        public static String Pythonvars() {
+    /**
+     *
+     * @return
+     */
+    public static String Pythonvars() {
         String h1="";
         h1="Vars";
         return h1;
         }         
         
-        
-        public static String PythonFolderParametersName() {
+    /**
+     *
+     * @return
+     */
+    public static String PythonFolderParametersName() {
         String h1="";
         h1="Run_This_File";
         return h1;
         }   
         
+    /**
+     *
+     * @return
+     */
     public static String PythonFolderParametersName_Arbortext() {
         String h1 = "";
         h1 = "Run_This_File_ArborText";
         return h1;
     }
         
-        public static String WebEchartsFolderMainName() {
+    /**
+     *
+     * @return
+     */
+    public static String WebEchartsFolderMainName() {
         String h1="";
         h1="web".toLowerCase();
         return h1;
         }    
     
-        
-        public static String CreateUserBackUp_Folder() throws IOException {
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
+    public static String CreateUserBackUp_Folder() throws IOException {
         String dir = userbackup;
 
         File file = new File(dir);
@@ -216,7 +317,9 @@ CopyImagesForReport();
         return dir;
     }        
         
-        
+    /**
+     *
+     */
     public static void CreateUserBackForlder() {
         File theDir = new File(userbackup);
         if (!theDir.exists()) {
@@ -224,6 +327,9 @@ CopyImagesForReport();
         }
     }
     
+    /**
+     *
+     */
     public static void CreateUserCamsFolder() {
             File theDir = new File(PathWebServer+mainFolder);
         if (!theDir.exists()) {
@@ -232,6 +338,10 @@ CopyImagesForReport();
     //PathWebServer+mainFolder
     }
     
+    /**
+     *
+     * @throws IOException
+     */
     public static void CheckIfCamsFolderExist() throws IOException {
         
         //int i = /("Are your sure ?");
@@ -297,10 +407,11 @@ private static void copyFileUsingStream(File source, File dest) throws IOExcepti
     }
 }    
     
-
-
-
-public static void CopyImagesForReport() throws IOException {
+    /**
+     *
+     * @throws IOException
+     */
+    public static void CopyImagesForReport() throws IOException {
 File camsdiag_icon = new File(Check_PathWebServer() + "\\MnIT_libs\\imgs\\camsdiag01.png");
 File biclogo_icon = new File(Check_PathWebServer() + "\\MnIT_libs\\imgs\\bic_icon.png");
 //File statText = new File(Check_PathWebServer()+mainFolder+"\\_CamsCharts"+ CamJobName()+"\\");

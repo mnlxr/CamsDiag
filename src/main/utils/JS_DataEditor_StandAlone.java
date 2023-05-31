@@ -74,7 +74,10 @@ public class JS_DataEditor_StandAlone extends javax.swing.JFrame {
         setExtendedState(java.awt.Frame.MAXIMIZED_BOTH);
     }
 
-    
+    /**
+     *
+     * @return
+     */
     public static String NoCamsJCox() {
     String h1="";
     h1=NumberOfCams_String();
@@ -83,8 +86,10 @@ public class JS_DataEditor_StandAlone extends javax.swing.JFrame {
     
     return h1;}
     
-    
-    
+    /**
+     *
+     * @throws IOException
+     */
     public void UserDataBackUp01() throws IOException {
         String username = UserInfo.Get_UserName().toLowerCase();
         String folder_user = "";
@@ -434,6 +439,13 @@ public class JS_DataEditor_StandAlone extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
        System.exit(0);
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    /**
+     *
+     * @return
+     * @throws FileNotFoundException
+     * @throws IOException
+     */
     public static String CamsDiagLOG_ReadFile() throws FileNotFoundException, IOException {
         String data = "";
         try {
@@ -450,6 +462,12 @@ public class JS_DataEditor_StandAlone extends javax.swing.JFrame {
         return data.trim();
     } 
     
+    /**
+     *
+     * @return
+     * @throws FileNotFoundException
+     * @throws IOException
+     */
     public static String[] CamsDiagJobsLOG_File() throws FileNotFoundException, IOException {
         String line = "";
         String[] data = {""};
@@ -472,6 +490,12 @@ public class JS_DataEditor_StandAlone extends javax.swing.JFrame {
         return data;
     }  
     
+    /**
+     *
+     * @throws FileNotFoundException
+     * @throws IOException
+     * @throws Exception
+     */
     public static void CamsDiag_Create_DescriptionTXT_JSstandalone() throws FileNotFoundException, IOException, Exception {
         String jsFile = PathWebServer + "\\" + mainFolder + "\\"
                 + jobselection.getSelectedItem().toString().substring(0, jobselection.getSelectedItem().toString().length() - 5)
@@ -492,7 +516,12 @@ public class JS_DataEditor_StandAlone extends javax.swing.JFrame {
         }
     }    
     
-        public static String GetAsmDescriptionJSstandalone() throws IOException {
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
+    public static String GetAsmDescriptionJSstandalone() throws IOException {
     String camdesc="";
     
     camdesc=FileToString.F2String(PathWebServer + "//" + mainFolder + "//"
@@ -502,6 +531,11 @@ public class JS_DataEditor_StandAlone extends javax.swing.JFrame {
     return camdesc;
     }
     
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
     public static String[] CheckFile() throws IOException {
         
         
@@ -526,6 +560,10 @@ public class JS_DataEditor_StandAlone extends javax.swing.JFrame {
         
     return str_array;}
 
+    /**
+     *
+     * @return
+     */
     public static String[] ReadHTMLfiles() {
         
         String[] list = null;
@@ -547,8 +585,11 @@ public class JS_DataEditor_StandAlone extends javax.swing.JFrame {
         
     return list;}
     
-    
-        public static String[] OnlyHTML_WithoutExtension() {
+    /**
+     *
+     * @return
+     */
+    public static String[] OnlyHTML_WithoutExtension() {
         
         String[] list = ReadHTMLfiles();
 
@@ -577,8 +618,11 @@ public class JS_DataEditor_StandAlone extends javax.swing.JFrame {
 //            }
 //        }
 
-    
-    
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
     public static String[] RemoveDuplicates() throws IOException {
         String[] h1 = SortArray_CamJobs();
         LinkedHashSet<String> lhSetColors
@@ -589,6 +633,11 @@ public class JS_DataEditor_StandAlone extends javax.swing.JFrame {
         return newArray;
     }
     
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
     public static String[] SortArray_CamJobs() throws IOException {
         String[] h1 = CamsDiagJobsLOG_File();
         int camjobs_size = h1.length;
@@ -607,6 +656,11 @@ public class JS_DataEditor_StandAlone extends javax.swing.JFrame {
         return h1;
     }
     
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
     public static String[] SortCams_method1() throws IOException {
         String[] h1 = CamsDiagJobsLOG_File();
         for (String string : h1) {
@@ -620,6 +674,11 @@ public class JS_DataEditor_StandAlone extends javax.swing.JFrame {
         return h1;
     }
 
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
     public static String[] SortCamsRevesreOrder_method1() throws IOException {
         String[] h1 = CamsDiagJobsLOG_File();
         for (String string : h1) {
@@ -634,8 +693,12 @@ public class JS_DataEditor_StandAlone extends javax.swing.JFrame {
         return h1;
     }   
     
-    
-        public void TextArea_to_fileWriter(File savePath, JTextArea textArea) {
+    /**
+     *
+     * @param savePath
+     * @param textArea
+     */
+    public void TextArea_to_fileWriter(File savePath, JTextArea textArea) {
         try {
             try (BufferedWriter bf = new BufferedWriter(new FileWriter(savePath))) {
                 bf.write(textArea.getText().trim());
@@ -646,8 +709,10 @@ public class JS_DataEditor_StandAlone extends javax.swing.JFrame {
 
     }
     
-    
-        public void SaveJS_UserDataFileEditor() {
+    /**
+     *
+     */
+    public void SaveJS_UserDataFileEditor() {
         try {
             File JS_UserData = new File(PathWebServer+"//"+mainFolder+"//"+
                 CamJobName() + "//" + CamJobName() + ".js");

@@ -26,12 +26,21 @@ import static main.common.MainVars.ReadJOB_from_CamsDiagJobName;
  */
 public class UserData_OkCancelDialog extends javax.swing.JDialog {
 
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
     public static String UserData_JOB_txt() throws IOException {
         String h1 = "";
         h1 = F2String(CamsDiag_JobName);
         return h1;
     }   
     
+    /**
+     *
+     * @return
+     */
     public static String JS_Data_File() {
         String h1 = "";
         try {
@@ -42,7 +51,10 @@ public class UserData_OkCancelDialog extends javax.swing.JDialog {
         return h1;
     }
     
-    
+    /**
+     *
+     * @return
+     */
     public static String JS_Data_Contetnt() {
         String h1 = "";
         try {
@@ -67,6 +79,8 @@ public class UserData_OkCancelDialog extends javax.swing.JDialog {
 
     /**
      * Creates new form UserData_OkCancelDialog
+     * @param parent
+     * @param modal
      */
     public UserData_OkCancelDialog(java.awt.Frame parent, boolean modal) {
         super(parent, modal);

@@ -37,10 +37,19 @@ import static main.common.Folders.mainFolder;
  */
 public class JS_Parameters {
 
+    /**
+     *
+     * @param args
+     * @throws Exception
+     */
     public static void main(String args[]) throws Exception {
         CamParametersChart();
     }
 
+    /**
+     *
+     * @throws IOException
+     */
     public static void CamParametersChart() throws IOException {
         for (int i = 1; i <= NumberOfCams(); i++) {
             File statText = new File(PathWebServer+"//"+mainFolder+"//"+
@@ -62,6 +71,11 @@ public class JS_Parameters {
 
     }
 
+    /**
+     *
+     * @param t
+     * @return
+     */
     public static String GetCamChartOptions(Integer t) {
         String h1 = "";
         h1 =    CamChart_Variables(t)
@@ -88,6 +102,11 @@ public class JS_Parameters {
         return h1;
     }
     
+    /**
+     *
+     * @param t
+     * @return
+     */
     public static String Echarts_Options(Integer t) {
         String h1 = "";
         h1 = 
@@ -646,6 +665,11 @@ public class JS_Parameters {
         return h1;
     }
 
+    /**
+     *
+     * @param t
+     * @return
+     */
     public static String Echarts_Functions(Integer t) {
         String h1 = "";
         h1 = "\n\n//////Functions\n\n"
@@ -988,6 +1012,11 @@ public class JS_Parameters {
         return h1;
     }
     
+    /**
+     *
+     * @param t
+     * @return
+     */
     public static String EchartsParameters_Table(Integer t) {
         String h1 = "";
         h1 = "function populateTable(boolHeaders, nColumns, dataArray) {\n"
@@ -1027,6 +1056,10 @@ public class JS_Parameters {
         return h1;
     }
     
+    /**
+     *
+     * @return
+     */
     public static String EchartsOptions_ShowGraphic() {
         String h1 = "";
         
