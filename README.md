@@ -32,6 +32,10 @@
 
 <hr>
 
+CamsDiag added to https://github.com/ecomfe/awesome-echarts#java
+
+<hr>
+
 Requirements : <a href="https://www.java.com/en/download/manual.jsp">Java JRE</a>
 
 Download and Infos : https://urlshrt.mmanolas.com/cams OR from <a href="https://github.com/mnlxr/CamsDiag/releases">Github Releases</a>
