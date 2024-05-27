@@ -14,7 +14,7 @@
  <a href="https://github.com/mnlxr/CamsDiag">
     <img alt="Image Size" src="https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2Fmnlxr%2FCamsDiag">
 </a> 
-<a href="https://urlshrt.mmanolas.com/cams">
+<a href="https://repos.mmanolas.com/CamsDiag/">
     <img alt="Image Size" src="https://img.shields.io/website?down_color=red&down_message=offline&style=plastic&url=https%3A%2F%2Frepos.mmanolas.com%2FCamsDiag%2F">
 </a>
  
@@ -40,7 +40,7 @@
 
 Requirements : <a href="https://www.java.com/en/download/manual.jsp">Java JRE</a>
 
-Download and Infos : https://urlshrt.mmanolas.com/cams OR from <a href="https://github.com/mnlxr/CamsDiag/releases">Github Releases</a>
+Download and Infos : https://repos.mmanolas.com/CamsDiag/ OR from <a href="https://github.com/mnlxr/CamsDiag/releases">Github Releases</a>
 
 <hr>
 
